@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102534" />
+    <meta name="description" content="Cassino demonstrativo: jogos locais e créditos fictícios, sem dinheiro real." />
+    <title>NOVA Play — Cassino Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="side-top">
+          <button class="icon-button mobile-menu" id="closeMenu" aria-label="Fechar menu">×</button>
+          <a class="brand" href="#home" aria-label="NOVA Play início"><span class="brand-mark">N</span><span>NOVA<span class="brand-sub">PLAY DEMO</span></span></a>
+          <div class="side-switch"><button class="side-switch-active" data-main-tab="casino">♠ <span data-i18n="casino">Cassino</span></button><button data-main-tab="sports">◉ <span data-i18n="sports">Esportes</span></button></div>
+        </div>
+        <nav class="side-nav" aria-label="Navegação principal">
+          <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span><span data-i18n="home">Início</span></button>
+          <button class="nav-item" data-view="promotions"><span class="nav-icon">♧</span><span data-i18n="promotions">Promoções</span><span class="chevron">⌄</span></button>
+          <button class="nav-item" data-view="challenges"><span class="nav-icon">♜</span><span data-i18n="challenges">Desafios</span></button>
+          <button class="nav-item" data-view="affiliates"><span class="nav-icon">♧</span><span data-i18n="affiliates">Afiliados</span></button>
+          <button class="nav-item" data-view="vip"><span class="nav-icon">♛</span><span data-i18n="vip">Clube VIP</span></button>
+          <button class="nav-item" data-view="blog"><span class="nav-icon">▤</span><span data-i18n="blog">Blog</span></button>
+          <button class="nav-item" data-view="forum"><span class="nav-icon">▣</span><span data-i18n="forum">Fórum</span></button>
+          <div class="nav-divider"></div>
+          <button class="nav-item" data-view="sponsors"><span class="nav-icon">♧</span><span data-i18n="sponsors">Patrocínios</span><span class="chevron">⌄</span></button>
+          <button class="nav-item" data-view="responsible"><span class="nav-icon">◈</span><span data-i18n="responsible">Jogo responsável</span></button>
+          <button class="nav-item" id="supportLink"><span class="nav-icon">◌</span><span data-i18n="support">Suporte ao vivo</span></button>
+          <button class="nav-item language-row" id="languageButton"><span class="nav-icon">◎</span><span><span data-i18n="language">Idioma</span>: <b id="languageName">Português</b></span><span class="chevron">⌄</span></button>
+          <div class="language-menu" id="languageMenu"><button data-language="pt">Português</button><button data-language="en">English</button></div>
+        </nav>
+        <div class="sidebar-note"><span class="demo-dot"></span><span data-i18n="demoMode">Modo de demonstração</span></div>
+      </aside>
+
+      <div class="mobile-scrim" id="mobileScrim"></div>
+      <main class="main-content" id="home">
+        <header class="topbar">
+          <div class="topbar-left"><button class="icon-button hamburger" id="openMenu" aria-label="Abrir menu">☰</button><div class="top-tabs"><button class="top-tab selected" data-main-tab="casino" data-i18n="casino">Cassino</button><button class="top-tab" data-main-tab="sports" data-i18n="sports">Esportes</button></div></div>
+          <a href="#home" class="brand top-brand"><span class="brand-mark">N</span><span>NOVA<span class="brand-sub">PLAY DEMO</span></span></a>
+          <div class="account-actions"><div class="wallet"><span class="coin">◉</span><span id="balance">10.000</span><span class="wallet-unit">DEMO</span><button id="resetBalance" class="wallet-plus" aria-label="Restaurar créditos de demonstração">+</button></div><button class="button subtle" id="loginButton" data-i18n="login">Entrar</button><button class="button primary" id="registerButton" data-i18n="register">Criar conta demo</button></div>
+        </header>
+
+        <div class="content-wrap">
+          <section class="hero" id="hero">
+            <div class="hero-shine"></div><div class="hero-art art-ball">◉</div><div class="hero-art art-cup">♜</div><div class="hero-art art-dice">⚄</div><div class="hero-art art-star">✦</div>
+            <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span><span data-i18n="heroEyebrow">ENTRE NO MODO SIMULAÇÃO</span></div><h1 data-i18n="heroTitle">Diversão de cassino.<br /><em>Créditos fictícios.</em></h1><p data-i18n="heroText">Explore uma experiência interativa inspirada em plataformas de cassino e esportes. Tudo acontece localmente, sem apostas ou dinheiro real.</p><button class="button hero-cta" id="playNow"><span data-i18n="exploreGames">Explorar jogos</span><span>→</span></button><div class="hero-proof"><span>✓ <span data-i18n="noDeposit">Sem depósitos</span></span><span>✓ <span data-i18n="noCashout">Sem saques</span></span><span>✓ <span data-i18n="localDemo">Demonstração local</span></span></div></div>
+            <div class="hero-side"><div class="hero-side-label" data-i18n="featured">DESTAQUE DA SEMANA</div><div class="hero-score"><span>✦</span><strong>10.000</strong><small data-i18n="demoCredits">CRÉDITOS DEMO</small></div><div class="hero-badge">NOVA<br /><small>PLAY</small></div></div>
+          </section>
+
+          <section class="stats-row" aria-label="Estatísticas demonstrativas"><div class="stat-card"><div class="stat-title"><span class="stat-icon">♠</span><span data-i18n="casino">Cassino</span></div><div class="stat-value"><span class="live-dot"></span><strong>2.418</strong><span data-i18n="players">jogando</span></div></div><div class="stat-card"><div class="stat-title"><span class="stat-icon">◉</span><span data-i18n="sports">Esportes</span></div><div class="stat-value"><span class="live-dot"></span><strong>846</strong><span data-i18n="watching">acompanhando</span></div></div></section>
+
+          <section class="search-row"><div class="search-box"><span>⌕</span><input id="searchInput" type="search" autocomplete="off" data-i18n-placeholder="searchPlaceholder" placeholder="Buscar jogos" /><kbd>Ctrl + K</kbd></div><button class="filters-button" id="filtersButton">☷ <span data-i18n="filters">Filtros</span></button></section>
+
+          <section id="casinoView" class="game-section">
+            <div class="section-heading"><div><div class="section-kicker" data-i18n="playForFun">JOGUE POR DIVERSÃO</div><h2 data-i18n="popularGames">Jogos populares</h2></div><button class="see-all" id="seeAll" data-i18n="seeAll">Ver todos <span>›</span></button></div>
+            <div class="category-strip" id="categoryStrip"><button class="category-chip selected" data-category="all" data-i18n="allGames">Todos</button><button class="category-chip" data-category="slots" data-i18n="slots">Slots</button><button class="category-chip" data-category="table" data-i18n="tableGames">Mesas</button><button class="category-chip" data-category="instant" data-i18n="instantGames">Instantâneos</button></div>
+            <div class="games-grid" id="gamesGrid"></div>
+            <div class="empty-search" id="emptySearch" hidden data-i18n="noGames">Nenhum jogo encontrado.</div>
+          </section>
+
+          <section id="sportsView" class="sports-view" hidden>
+            <div class="section-heading"><div><div class="section-kicker" data-i18n="liveMatches">PARTIDAS DE DEMONSTRAÇÃO</div><h2 data-i18n="sports">Esportes</h2></div><span class="demo-pill"><span class="live-dot"></span><span data-i18n="simulated">SIMULADO</span></span></div>
+            <div class="sports-banner"><div><div class="section-kicker" data-i18n="sportsbookDemo">SPORTSBOOK DEMO</div><h2 data-i18n="sportsBannerTitle">Acompanhe partidas.<br /><em>Sem risco real.</em></h2><p data-i18n="sportsBannerText">Escolha um resultado e veja como uma aposta demonstrativa funcionaria, usando apenas créditos fictícios.</p></div><div class="sports-ball">⚽</div></div>
+            <div class="match-list" id="matchList"></div>
+          </section>
+
+          <section class="trust-strip"><div class="trust-symbol">◈</div><div><strong data-i18n="responsibleTitle">Jogue com responsabilidade</strong><p data-i18n="responsibleText">Este projeto é uma simulação. Os créditos não têm valor financeiro e não podem ser comprados, transferidos ou sacados.</p></div><button id="responsibleDetails" class="text-link" data-i18n="learnMore">Saiba mais</button></section>
+          <footer class="site-footer"><span>© 2026 NOVA Play Demo</span><span data-i18n="footerDisclosure">Projeto demonstrativo. Sem dinheiro real.</span><a href="https://brunnodev.store" target="_blank" rel="noreferrer">brunnodev.store</a></footer>
+        </div>
+      </main>
+    </div>
+
+    <div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Fechar">×</button><div class="modal-content" id="modalContent"></div></section></div>
+    <section class="support-panel" id="supportPanel" hidden><div class="support-head"><strong data-i18n="demoSupport">Suporte demo</strong><button id="supportClose" aria-label="Fechar suporte">×</button></div><p data-i18n="supportText">Olá! Posso explicar como usar os créditos fictícios e os jogos locais.</p><div class="support-options"><button data-support="credits" data-i18n="supportCredits">Como funcionam os créditos?</button><button data-support="games" data-i18n="supportGames">Quais jogos posso testar?</button><button data-support="money" data-i18n="supportMoney">Posso depositar dinheiro?</button></div><div class="support-answer" id="supportAnswer" data-i18n="supportDefault">Escolha uma pergunta acima.</div></section>
+    <button class="support-fab" id="supportFab" aria-label="Suporte ao vivo">◌</button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="cookie-banner" id="cookieBanner"><div class="cookie-icon">ⓘ</div><div><strong data-i18n="cookieTitle">Cookies essenciais</strong><p data-i18n="cookieText">Usamos armazenamento local apenas para salvar preferências e créditos demo neste dispositivo.</p></div><button id="acceptCookies" class="button subtle" data-i18n="accept">Entendi</button></div>
+  </body>
+</html>
