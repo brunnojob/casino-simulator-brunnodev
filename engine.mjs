@@ -10,6 +10,7 @@ export function secureInteger(maximum, cryptoProvider = globalThis.crypto) {
 }
 
 export function settle(game, stake, draws) {
+  if (!Array.isArray(draws)) throw new Error("invalid_draws");
   if (!Number.isSafeInteger(stake) || stake < 1 || stake > 1000000)
     throw new Error("invalid_stake");
   let multiplier;
@@ -60,6 +61,9 @@ export class GameSession {
     this.rounds = [];
   }
   play(game, stake) {
+    if (!["slots", "roulette", "dice"].includes(game)) throw new Error("unknown_game");
+    if (!Number.isSafeInteger(stake) || stake < 1 || stake > 1000000)
+      throw new Error("invalid_stake");
     if (stake > this.balance || this.rounds.length >= 10000)
       throw new Error("session_limit");
     const draws =
@@ -80,7 +84,7 @@ export class GameSession {
       balance,
     };
     this.rounds.push(round);
-    return round;
+    return { ...round, draws: [...round.draws] };
   }
   export() {
     return {
