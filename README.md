@@ -17,7 +17,7 @@ Rounds use virtual credits only. Results can be recomputed from recorded draws. 
 
 ## Optional report archive
 
-Export a JSON report, then run `python cloud/sync.py enqueue result.json --project casino-simulator-brunnodev` and `python cloud/sync.py sync`. Synchronization requires `BRUNNODEV_ACCESS_TOKEN` and the external operations API; the local outbox retains unacknowledged reports.
+Use the [shared operations archive client](https://github.com/brunnojob/vercel-home-telemetry-api/tree/main/cloud) to queue `result.json` under project `casino-simulator-brunnodev`. The client uses `BRUNNODEV_ACCESS_TOKEN` and retains unacknowledged reports locally.
 
 ## License
 
