@@ -404,7 +404,6 @@ const games = [
     category: "slots",
     icon: "⚡",
     gradient: "linear-gradient(145deg,#207fc5,#182650 75%)",
-    players: "666",
     description:
       "A mythical slot-inspired demo round with a fictional credit balance.",
   },
@@ -415,7 +414,6 @@ const games = [
     category: "slots",
     icon: "☀️",
     gradient: "linear-gradient(145deg,#d08a28,#57351e 78%)",
-    players: "595",
     description:
       "A golden-themed demo slot. Results are local and have no cash value.",
   },
@@ -426,7 +424,6 @@ const games = [
     category: "instant",
     icon: "🦈",
     gradient: "linear-gradient(145deg,#39bbde,#145b86 76%)",
-    players: "229",
     description: "An ocean-themed instant game for demonstration only.",
   },
   {
@@ -436,7 +433,6 @@ const games = [
     category: "slots",
     icon: "🌃",
     gradient: "linear-gradient(145deg,#ec43c5,#401b77 77%)",
-    players: "302",
     description: "A neon city slot-style demo with playful local results.",
   },
   {
@@ -446,7 +442,6 @@ const games = [
     category: "table",
     icon: "⚒️",
     gradient: "linear-gradient(145deg,#b97032,#3c2a22 78%)",
-    players: "237",
     description: "A fantasy-themed table game preview using fictional credits.",
   },
   {
@@ -456,7 +451,6 @@ const games = [
     category: "table",
     icon: "🛡️",
     gradient: "linear-gradient(145deg,#c18d49,#30404e 78%)",
-    players: "314",
     description: "A strategy-inspired demo table. No prizes or money involved.",
   },
   {
@@ -466,7 +460,6 @@ const games = [
     category: "instant",
     icon: "☠️",
     gradient: "linear-gradient(145deg,#d52935,#51213f 80%)",
-    players: "115",
     description:
       "A mischievous instant-play demo, powered by local random outcomes.",
   },
@@ -477,7 +470,6 @@ const games = [
     category: "slots",
     icon: "🐈‍⬛",
     gradient: "linear-gradient(145deg,#bf44ba,#35225e 80%)",
-    players: "80",
     description: "A colorful fantasy slot concept with fictional credits.",
   },
   {
@@ -487,7 +479,6 @@ const games = [
     category: "table",
     icon: "♛",
     gradient: "linear-gradient(145deg,#bda458,#343258 78%)",
-    players: "72",
     description: "A classic table-game interface preview. Demo balance only.",
   },
   {
@@ -497,7 +488,6 @@ const games = [
     category: "instant",
     icon: "🎲",
     gradient: "linear-gradient(145deg,#df5b36,#702f2a 78%)",
-    players: "54",
     description: "A quick dice-inspired round in this local simulation.",
   },
   {
@@ -507,7 +497,6 @@ const games = [
     category: "slots",
     icon: "🌌",
     gradient: "linear-gradient(145deg,#397fc5,#39305f 78%)",
-    players: "48",
     description: "Northern-light colors and a simple local demo round.",
   },
   {
@@ -517,7 +506,6 @@ const games = [
     category: "table",
     icon: "🂡",
     gradient: "linear-gradient(145deg,#31765e,#183f3f 78%)",
-    players: "41",
     description: "A card-table visual prototype. No real stakes or rewards.",
   },
 ];
@@ -599,7 +587,7 @@ function renderGames() {
   $("#gamesGrid").innerHTML = list
     .map(
       (g) =>
-        `<button class="game-card" data-game="${g.id}" aria-label="${t("play")}: ${g.title}"><div class="game-art" style="background:${g.gradient}"><span class="game-provider">N</span><span class="game-glyph">${g.icon}</span><span class="game-label">${g.title}</span></div><div class="game-meta"><span><i class="live-dot"></i>${g.players} ${t("players")}</span><span>${g.provider}</span></div></button>`,
+        `<button class="game-card" data-game="${g.id}" aria-label="${t("play")}: ${g.title}"><div class="game-art" style="background:${g.gradient}"><span class="game-provider">N</span><span class="game-glyph">${g.icon}</span><span class="game-label">${g.title}</span></div><div class="game-meta"><span><i class="live-dot"></i>${demoRounds} ${language === "pt" ? "rodadas nesta sessão" : "rounds this session"}</span><span>${g.provider}</span></div></button>`,
     )
     .join("");
   $("#emptySearch").hidden = list.length > 0;
