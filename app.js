@@ -1,46 +1,1069 @@
-const translations={pt:{casino:"Cassino",sports:"Esportes",statsLabel:"Estatísticas demonstrativas",gameDescription:"Esta rodada temática é uma demonstração local com créditos fictícios, sem valor financeiro.",home:"Início",promotions:"Promoções",challenges:"Desafios",affiliates:"Afiliados",vip:"Clube VIP",blog:"Blog",forum:"Fórum",sponsors:"Patrocínios",responsible:"Jogo responsável",support:"Suporte ao vivo",language:"Idioma",demoMode:"Modo de demonstração",login:"Entrar",register:"Criar conta demo",heroEyebrow:"ENTRE NO MODO SIMULAÇÃO",heroTitle:"Diversão de cassino.<br /><em>Créditos fictícios.</em>",heroText:"Explore uma experiência interativa inspirada em plataformas de cassino e esportes. Tudo acontece localmente, sem apostas ou dinheiro real.",exploreGames:"Explorar jogos",noDeposit:"Sem depósitos",noCashout:"Sem saques",localDemo:"Demonstração local",featured:"DESTAQUE DA SEMANA",demoCredits:"CRÉDITOS DEMO",players:"jogando",watching:"acompanhando",searchPlaceholder:"Buscar jogos",filters:"Filtros",playForFun:"JOGUE POR DIVERSÃO",popularGames:"Jogos populares",seeAll:"Ver todos",allGames:"Todos",slots:"Slots",tableGames:"Mesas",instantGames:"Instantâneos",noGames:"Nenhum jogo encontrado.",liveMatches:"PARTIDAS DE DEMONSTRAÇÃO",simulated:"SIMULADO",sportsbookDemo:"SPORTSBOOK DEMO",sportsBannerTitle:"Acompanhe partidas.<br /><em>Sem risco real.</em>",sportsBannerText:"Escolha um resultado e veja como uma aposta demonstrativa funcionaria, usando apenas créditos fictícios.",responsibleTitle:"Jogue com responsabilidade",responsibleText:"Este projeto é uma simulação. Os créditos não têm valor financeiro e não podem ser comprados, transferidos ou sacados.",learnMore:"Saiba mais",footerDisclosure:"Projeto demonstrativo. Sem dinheiro real.",demoSupport:"Suporte demo",supportText:"Olá! Posso explicar como usar os créditos fictícios e os jogos locais.",supportCredits:"Como funcionam os créditos?",supportGames:"Quais jogos posso testar?",supportMoney:"Posso depositar dinheiro?",supportDefault:"Escolha uma pergunta acima.",cookieTitle:"Cookies essenciais",cookieText:"Usamos armazenamento local apenas para salvar preferências e créditos demo neste dispositivo.",accept:"Entendi",demoOnly:"Demonstração local · sem dinheiro real",play:"Jogar demo",betSize:"Tamanho da jogada",spin:"Girar",placeBet:"Simular aposta",balance:"Saldo de créditos demo",win:"Boa! Resultado positivo: +{amount} créditos demo.",lose:"Resultado da rodada: -{amount} créditos demo.",lowBalance:"Saldo demo insuficiente. Restaure seus créditos para continuar.",restored:"Saldo restaurado para 10.000 créditos demo.",selectedBet:"Resultado selecionado: {team}.",betPlaced:"Simulação registrada: {amount} créditos demo.",nickname:"Apelido demo",nicknameLabel:"Escolha um apelido para esta demonstração",continueDemo:"Continuar",accountNotice:"Sem cadastro real, senha, login externo ou envio de dados.",welcome:"Bem-vindo, {name}!",cookiesAccepted:"Preferências salvas neste dispositivo.",supportCreditsAnswer:"Você começa com 10.000 créditos fictícios. Eles só existem neste navegador e podem ser restaurados a qualquer momento.",supportGamesAnswer:"Escolha qualquer cartão de jogo. A rodada e o resultado são simulados localmente.",supportMoneyAnswer:"Não. Este site é apenas uma demonstração: não há pagamentos, depósitos, saques ou prêmios reais.",promotionsTitle:"Promoções demo",promotionsText:"Conheça os cartões promocionais da experiência. Eles não representam bônus resgatáveis.",challengesTitle:"Desafios",challengesText:"Desafios locais para explorar os jogos sem dinheiro real.",affiliatesTitle:"Programa de afiliados",affiliatesText:"Área demonstrativa para apresentar um programa de parceiros.",vipTitle:"Clube NOVA",vipText:"Uma prévia visual de níveis e recompensas fictícias.",blogTitle:"Blog NOVA",blogText:"Artigos demonstrativos sobre jogos, design e segurança digital.",forumTitle:"Comunidade",forumText:"Espaço de comunidade ilustrativo. Nenhuma mensagem é enviada.",sponsorsTitle:"Patrocínios",sponsorsText:"Área de marcas parceiras em ambiente de demonstração.",responsiblePageTitle:"Jogo responsável",responsiblePageText:"NOVA Play Demo foi criado exclusivamente para demonstrar uma interface. Não oferece jogos com dinheiro, apostas de verdade, pagamentos ou prêmios. Faça pausas e não use este conceito como incentivo a jogar por dinheiro.",backHome:"Voltar ao início",resetDemo:"Restaurar créditos demo",memberDemo:"Perfil local demo",categorySlots:"Slot",categoryTable:"Mesa",categoryInstant:"Instantâneo",popular:"POPULAR",gameRound:"Rodada demonstrativa",matchLeague:"LIGA DE DEMONSTRAÇÃO",matchTime:"Hoje · Simulação local",homeTeam:"Aurora FC",awayTeam:"Maré United",basketballHome:"Norte Wolves",basketballAway:"Vale Comets",esportsHome:"Neon Foxes",esportsAway:"Pixel Titans",homeDraw:"Casa",draw:"Empate",away:"Visitante",stakeNotice:"Cada seleção usa 50 créditos fictícios. Nenhuma aposta real é feita."},en:{casino:"Casino",sports:"Sports",statsLabel:"Demo statistics",gameDescription:"This themed round is a local demo using fictional credits with no monetary value.",home:"Home",promotions:"Promotions",challenges:"Challenges",affiliates:"Affiliates",vip:"VIP Club",blog:"Blog",forum:"Forum",sponsors:"Sponsors",responsible:"Responsible play",support:"Live support",language:"Language",demoMode:"Demo mode",login:"Log in",register:"Create demo account",heroEyebrow:"ENTER SIMULATION MODE",heroTitle:"Casino-style fun.<br /><em>Fictional credits.</em>",heroText:"Explore an interactive experience inspired by casino and sports platforms. Everything runs locally, with no real wagers or money.",exploreGames:"Explore games",noDeposit:"No deposits",noCashout:"No withdrawals",localDemo:"Local demo",featured:"FEATURED THIS WEEK",demoCredits:"DEMO CREDITS",players:"playing",watching:"following",searchPlaceholder:"Search games",filters:"Filters",playForFun:"PLAY FOR FUN",popularGames:"Popular games",seeAll:"See all",allGames:"All",slots:"Slots",tableGames:"Table games",instantGames:"Instant games",noGames:"No games found.",liveMatches:"DEMO MATCHES",simulated:"SIMULATED",sportsbookDemo:"SPORTSBOOK DEMO",sportsBannerTitle:"Follow the matches.<br /><em>No real risk.</em>",sportsBannerText:"Choose an outcome and see how a demo wager would work, using fictional credits only.",responsibleTitle:"Play responsibly",responsibleText:"This project is a simulation. Credits have no monetary value and cannot be purchased, transferred, or withdrawn.",learnMore:"Learn more",footerDisclosure:"Demonstration project. No real money.",demoSupport:"Demo support",supportText:"Hi! I can explain how fictional credits and local games work.",supportCredits:"How do credits work?",supportGames:"Which games can I try?",supportMoney:"Can I deposit money?",supportDefault:"Choose a question above.",cookieTitle:"Essential cookies",cookieText:"Local storage is only used to save preferences and demo credits on this device.",accept:"Got it",demoOnly:"Local demo · no real money",play:"Play demo",betSize:"Play size",spin:"Spin",placeBet:"Simulate wager",balance:"Demo credit balance",win:"Nice! Winning result: +{amount} demo credits.",lose:"Round result: -{amount} demo credits.",lowBalance:"Not enough demo credits. Restore your credits to continue.",restored:"Balance restored to 10,000 demo credits.",selectedBet:"Selected outcome: {team}.",betPlaced:"Demo recorded: {amount} demo credits.",nickname:"Demo nickname",nicknameLabel:"Choose a nickname for this demo",continueDemo:"Continue",accountNotice:"No real registration, password, external sign-in, or data submission.",welcome:"Welcome, {name}!",cookiesAccepted:"Preferences saved on this device.",supportCreditsAnswer:"You start with 10,000 fictional credits. They only exist in this browser and can be restored at any time.",supportGamesAnswer:"Choose any game card. Each round and result is simulated locally.",supportMoneyAnswer:"No. This is only a demo: there are no payments, deposits, withdrawals, or real prizes.",promotionsTitle:"Demo promotions",promotionsText:"Explore promotional cards for this experience. They are not redeemable bonuses.",challengesTitle:"Challenges",challengesText:"Local challenges to explore the games without real money.",affiliatesTitle:"Affiliate program",affiliatesText:"A demo area presenting a partner program.",vipTitle:"NOVA Club",vipText:"A visual preview of fictional levels and rewards.",blogTitle:"NOVA Blog",blogText:"Demo articles about games, design, and digital safety.",forumTitle:"Community",forumText:"An illustrative community space. No messages are sent.",sponsorsTitle:"Sponsors",sponsorsText:"Partner brand area in a demo environment.",responsiblePageTitle:"Responsible play",responsiblePageText:"NOVA Play Demo was created exclusively to demonstrate an interface. It does not offer real-money games, wagers, payments, or prizes. Take breaks and do not use this concept as encouragement to gamble.",backHome:"Back to home",resetDemo:"Restore demo credits",memberDemo:"Local demo profile",categorySlots:"Slot",categoryTable:"Table",categoryInstant:"Instant",popular:"POPULAR",gameRound:"Demo round",matchLeague:"DEMO LEAGUE",matchTime:"Today · Local simulation",homeTeam:"Aurora FC",awayTeam:"Tide United",basketballHome:"North Wolves",basketballAway:"Vale Comets",esportsHome:"Neon Foxes",esportsAway:"Pixel Titans",homeDraw:"Home",draw:"Draw",away:"Away",stakeNotice:"Each selection uses 50 fictional credits. No real wager is placed."}};
-const sectionText={
-pt:{claim:"Resgatar recompensa demo",claimed:"Recompensa demo resgatada",promoReward:"Recompensa única de 500 créditos fictícios",challengePlay:"Jogar uma rodada demo",challengeSports:"Ver partidas demo",rounds:"Rodadas concluídas",copyCode:"Copiar código demo",copied:"Código copiado",vipReward:"Resgatar 250 créditos demo",vipLocked:"Complete 5 rodadas para liberar",vipClaimed:"Recompensa VIP demo resgatada",article1:"Como funciona uma rodada demo",article1body:"Cada jogo usa créditos fictícios e um resultado gerado localmente. O saldo não representa dinheiro nem prêmio.",article2:"Como ler o painel SCADA",article2body:"As estatísticas e partidas desta página são ilustrações da interface. Não representam atividade ou resultados ao vivo.",article3:"Segurança no jogo",article3body:"Faça pausas e use esta página somente como demonstração. Não há apostas com dinheiro real.",forumPlaceholder:"Escreva uma mensagem para o mural local",forumPost:"Publicar no mural local",forumEmpty:"Ainda não há mensagens neste dispositivo.",forumSent:"Mensagem salva apenas neste dispositivo.",sponsorDetails:"Selecionar destaque",sponsorSelected:"Destaque selecionado",pauseStart:"Iniciar pausa de 15 minutos",pauseResume:"Retomar demonstração",pauseOn:"Pausa ativa. Rodadas e palpites demo estão bloqueados.",pauseOff:"Demonstração retomada.",pauseDisclosure:"Pausa afeta somente este simulador neste dispositivo.",creditTitle:"Adicionar créditos demo",creditDescription:"Escolha qualquer quantidade de créditos fictícios. Nenhum Pix ou pagamento é feito.",creditAmount:"Quantidade de créditos",creditAdd:"Adicionar créditos fictícios",creditRestore:"Restaurar para 10.000",creditError:"Informe uma quantidade inteira maior que zero.",creditAdded:"{amount} créditos fictícios adicionados.",localOnly:"Tudo fica neste navegador; não existe depósito, saque ou valor financeiro.",promoTitle:"Promoção NOVA demo",promoBody:"Teste o cartão de promoção. A recompensa só altera o saldo fictício deste navegador.",challengeTitle:"Desafios demo",challengeBody:"Acompanhe objetivos locais enquanto explora a demonstração.",affiliateTitle:"Indique um amigo",affiliateBody:"Código ilustrativo para testar a interface. Não há cadastro de afiliado nem comissão real.",affiliateCode:"NOVA-DEMO-2026",vipBody:"Seu progresso usa somente rodadas feitas neste navegador.",blogBody:"Artigos curtos para apresentar a experiência NOVA Play.",forumBody:"Mural local de demonstração. As mensagens não são enviadas a um servidor.",sponsorBody:"Explore destaques fictícios criados para demonstrar esta área.",responsibleBody:"Use a pausa para interromper as rodadas demo. Os controles de jogo e esportes ficam bloqueados até retomar.",creditsChallenge:"Jogue 5 rodadas",sportsChallenge:"Explore a seção de esportes",noPayments:"Sem pagamentos reais"},
-en:{claim:"Claim demo reward",claimed:"Demo reward claimed",promoReward:"One-time reward of 500 fictional credits",challengePlay:"Play a demo round",challengeSports:"View demo matches",rounds:"Completed rounds",copyCode:"Copy demo code",copied:"Code copied",vipReward:"Claim 250 demo credits",vipLocked:"Complete 5 rounds to unlock",vipClaimed:"Demo VIP reward claimed",article1:"How a demo round works",article1body:"Each game uses fictional credits and a locally generated result. The balance is not money or a prize.",article2:"Reading the SCADA panel",article2body:"Statistics and matches on this page illustrate the interface. They do not represent live activity or results.",article3:"Play safely",article3body:"Take breaks and use this page only as a demonstration. No real money wagers are available.",forumPlaceholder:"Write a message for the local board",forumPost:"Post to local board",forumEmpty:"No messages on this device yet.",forumSent:"Message saved on this device only.",sponsorDetails:"Select feature",sponsorSelected:"Feature selected",pauseStart:"Start a 15-minute break",pauseResume:"Resume demo",pauseOn:"Break active. Demo rounds and picks are paused.",pauseOff:"Demo resumed.",pauseDisclosure:"The break only affects this simulator on this device.",creditTitle:"Add demo credits",creditDescription:"Choose any amount of fictional credits. No Pix or payment is made.",creditAmount:"Credit amount",creditAdd:"Add fictional credits",creditRestore:"Restore to 10,000",creditError:"Enter a whole number greater than zero.",creditAdded:"{amount} fictional credits added.",localOnly:"Everything stays in this browser; no deposit, withdrawal, or monetary value.",promoTitle:"NOVA demo promotion",promoBody:"Try the promotion card. The reward only changes the fictional balance in this browser.",challengeTitle:"Demo challenges",challengeBody:"Track local goals while exploring the demo.",affiliateTitle:"Invite a friend",affiliateBody:"Illustrative code to test this section. No affiliate account or real commission.",affiliateCode:"NOVA-DEMO-2026",vipBody:"Your progress uses only rounds played in this browser.",blogBody:"Short articles introducing the NOVA Play experience.",forumBody:"Local demo board. Messages are not sent to a server.",sponsorBody:"Explore fictional features created to demonstrate this section.",responsibleBody:"Use the break to pause demo rounds. Game and sports controls stay locked until you resume.",creditsChallenge:"Play 5 rounds",sportsChallenge:"Explore the sports section",noPayments:"No real payments"}
+import { GameSession } from "./engine.mjs";
+const translations = {
+  pt: {
+    casino: "Cassino",
+    sports: "Esportes",
+    statsLabel: "Estatísticas demonstrativas",
+    gameDescription:
+      "Esta rodada temática é uma demonstração local com créditos fictícios, sem valor financeiro.",
+    home: "Início",
+    promotions: "Promoções",
+    challenges: "Desafios",
+    affiliates: "Afiliados",
+    vip: "Clube VIP",
+    blog: "Blog",
+    forum: "Fórum",
+    sponsors: "Patrocínios",
+    responsible: "Jogo responsável",
+    support: "Suporte ao vivo",
+    language: "Idioma",
+    demoMode: "Modo de demonstração",
+    login: "Entrar",
+    register: "Criar conta demo",
+    heroEyebrow: "ENTRE NO MODO SIMULAÇÃO",
+    heroTitle: "Diversão de cassino.<br /><em>Créditos fictícios.</em>",
+    heroText:
+      "Explore uma experiência interativa inspirada em plataformas de cassino e esportes. Tudo acontece localmente, sem apostas ou dinheiro real.",
+    exploreGames: "Explorar jogos",
+    noDeposit: "Sem depósitos",
+    noCashout: "Sem saques",
+    localDemo: "Demonstração local",
+    featured: "DESTAQUE DA SEMANA",
+    demoCredits: "CRÉDITOS DEMO",
+    players: "jogando",
+    watching: "acompanhando",
+    searchPlaceholder: "Buscar jogos",
+    filters: "Filtros",
+    playForFun: "JOGUE POR DIVERSÃO",
+    popularGames: "Jogos populares",
+    seeAll: "Ver todos",
+    allGames: "Todos",
+    slots: "Slots",
+    tableGames: "Mesas",
+    instantGames: "Instantâneos",
+    noGames: "Nenhum jogo encontrado.",
+    liveMatches: "PARTIDAS DE DEMONSTRAÇÃO",
+    simulated: "SIMULADO",
+    sportsbookDemo: "SPORTSBOOK DEMO",
+    sportsBannerTitle: "Acompanhe partidas.<br /><em>Sem risco real.</em>",
+    sportsBannerText:
+      "Escolha um resultado e veja como uma aposta demonstrativa funcionaria, usando apenas créditos fictícios.",
+    responsibleTitle: "Jogue com responsabilidade",
+    responsibleText:
+      "Este projeto é uma simulação. Os créditos não têm valor financeiro e não podem ser comprados, transferidos ou sacados.",
+    learnMore: "Saiba mais",
+    footerDisclosure: "Projeto demonstrativo. Sem dinheiro real.",
+    demoSupport: "Suporte demo",
+    supportText:
+      "Olá! Posso explicar como usar os créditos fictícios e os jogos locais.",
+    supportCredits: "Como funcionam os créditos?",
+    supportGames: "Quais jogos posso testar?",
+    supportMoney: "Posso depositar dinheiro?",
+    supportDefault: "Escolha uma pergunta acima.",
+    cookieTitle: "Cookies essenciais",
+    cookieText:
+      "Usamos armazenamento local apenas para salvar preferências e créditos demo neste dispositivo.",
+    accept: "Entendi",
+    demoOnly: "Demonstração local · sem dinheiro real",
+    play: "Jogar demo",
+    betSize: "Tamanho da jogada",
+    spin: "Girar",
+    placeBet: "Simular aposta",
+    balance: "Saldo de créditos demo",
+    win: "Boa! Resultado positivo: +{amount} créditos demo.",
+    lose: "Resultado da rodada: -{amount} créditos demo.",
+    lowBalance:
+      "Saldo demo insuficiente. Restaure seus créditos para continuar.",
+    restored: "Saldo restaurado para 10.000 créditos demo.",
+    selectedBet: "Resultado selecionado: {team}.",
+    betPlaced: "Simulação registrada: {amount} créditos demo.",
+    nickname: "Apelido demo",
+    nicknameLabel: "Escolha um apelido para esta demonstração",
+    continueDemo: "Continuar",
+    accountNotice: "Sem cadastro real, senha, login externo ou envio de dados.",
+    welcome: "Bem-vindo, {name}!",
+    cookiesAccepted: "Preferências salvas neste dispositivo.",
+    supportCreditsAnswer:
+      "Você começa com 10.000 créditos fictícios. Eles só existem neste navegador e podem ser restaurados a qualquer momento.",
+    supportGamesAnswer:
+      "Escolha qualquer cartão de jogo. A rodada e o resultado são simulados localmente.",
+    supportMoneyAnswer:
+      "Não. Este site é apenas uma demonstração: não há pagamentos, depósitos, saques ou prêmios reais.",
+    promotionsTitle: "Promoções demo",
+    promotionsText:
+      "Conheça os cartões promocionais da experiência. Eles não representam bônus resgatáveis.",
+    challengesTitle: "Desafios",
+    challengesText: "Desafios locais para explorar os jogos sem dinheiro real.",
+    affiliatesTitle: "Programa de afiliados",
+    affiliatesText:
+      "Área demonstrativa para apresentar um programa de parceiros.",
+    vipTitle: "Clube NOVA",
+    vipText: "Uma prévia visual de níveis e recompensas fictícias.",
+    blogTitle: "Blog NOVA",
+    blogText: "Artigos demonstrativos sobre jogos, design e segurança digital.",
+    forumTitle: "Comunidade",
+    forumText: "Espaço de comunidade ilustrativo. Nenhuma mensagem é enviada.",
+    sponsorsTitle: "Patrocínios",
+    sponsorsText: "Área de marcas parceiras em ambiente de demonstração.",
+    responsiblePageTitle: "Jogo responsável",
+    responsiblePageText:
+      "NOVA Play Demo foi criado exclusivamente para demonstrar uma interface. Não oferece jogos com dinheiro, apostas de verdade, pagamentos ou prêmios. Faça pausas e não use este conceito como incentivo a jogar por dinheiro.",
+    backHome: "Voltar ao início",
+    resetDemo: "Restaurar créditos demo",
+    memberDemo: "Perfil local demo",
+    categorySlots: "Slot",
+    categoryTable: "Mesa",
+    categoryInstant: "Instantâneo",
+    popular: "POPULAR",
+    gameRound: "Rodada demonstrativa",
+    matchLeague: "LIGA DE DEMONSTRAÇÃO",
+    matchTime: "Hoje · Simulação local",
+    homeTeam: "Aurora FC",
+    awayTeam: "Maré United",
+    basketballHome: "Norte Wolves",
+    basketballAway: "Vale Comets",
+    esportsHome: "Neon Foxes",
+    esportsAway: "Pixel Titans",
+    homeDraw: "Casa",
+    draw: "Empate",
+    away: "Visitante",
+    stakeNotice:
+      "Cada seleção usa 50 créditos fictícios. Nenhuma aposta real é feita.",
+  },
+  en: {
+    casino: "Casino",
+    sports: "Sports",
+    statsLabel: "Demo statistics",
+    gameDescription:
+      "This themed round is a local demo using fictional credits with no monetary value.",
+    home: "Home",
+    promotions: "Promotions",
+    challenges: "Challenges",
+    affiliates: "Affiliates",
+    vip: "VIP Club",
+    blog: "Blog",
+    forum: "Forum",
+    sponsors: "Sponsors",
+    responsible: "Responsible play",
+    support: "Live support",
+    language: "Language",
+    demoMode: "Demo mode",
+    login: "Log in",
+    register: "Create demo account",
+    heroEyebrow: "ENTER SIMULATION MODE",
+    heroTitle: "Casino-style fun.<br /><em>Fictional credits.</em>",
+    heroText:
+      "Explore an interactive experience inspired by casino and sports platforms. Everything runs locally, with no real wagers or money.",
+    exploreGames: "Explore games",
+    noDeposit: "No deposits",
+    noCashout: "No withdrawals",
+    localDemo: "Local demo",
+    featured: "FEATURED THIS WEEK",
+    demoCredits: "DEMO CREDITS",
+    players: "playing",
+    watching: "following",
+    searchPlaceholder: "Search games",
+    filters: "Filters",
+    playForFun: "PLAY FOR FUN",
+    popularGames: "Popular games",
+    seeAll: "See all",
+    allGames: "All",
+    slots: "Slots",
+    tableGames: "Table games",
+    instantGames: "Instant games",
+    noGames: "No games found.",
+    liveMatches: "DEMO MATCHES",
+    simulated: "SIMULATED",
+    sportsbookDemo: "SPORTSBOOK DEMO",
+    sportsBannerTitle: "Follow the matches.<br /><em>No real risk.</em>",
+    sportsBannerText:
+      "Choose an outcome and see how a demo wager would work, using fictional credits only.",
+    responsibleTitle: "Play responsibly",
+    responsibleText:
+      "This project is a simulation. Credits have no monetary value and cannot be purchased, transferred, or withdrawn.",
+    learnMore: "Learn more",
+    footerDisclosure: "Demonstration project. No real money.",
+    demoSupport: "Demo support",
+    supportText:
+      "Hi! I can explain how fictional credits and local games work.",
+    supportCredits: "How do credits work?",
+    supportGames: "Which games can I try?",
+    supportMoney: "Can I deposit money?",
+    supportDefault: "Choose a question above.",
+    cookieTitle: "Essential cookies",
+    cookieText:
+      "Local storage is only used to save preferences and demo credits on this device.",
+    accept: "Got it",
+    demoOnly: "Local demo · no real money",
+    play: "Play demo",
+    betSize: "Play size",
+    spin: "Spin",
+    placeBet: "Simulate wager",
+    balance: "Demo credit balance",
+    win: "Nice! Winning result: +{amount} demo credits.",
+    lose: "Round result: -{amount} demo credits.",
+    lowBalance: "Not enough demo credits. Restore your credits to continue.",
+    restored: "Balance restored to 10,000 demo credits.",
+    selectedBet: "Selected outcome: {team}.",
+    betPlaced: "Demo recorded: {amount} demo credits.",
+    nickname: "Demo nickname",
+    nicknameLabel: "Choose a nickname for this demo",
+    continueDemo: "Continue",
+    accountNotice:
+      "No real registration, password, external sign-in, or data submission.",
+    welcome: "Welcome, {name}!",
+    cookiesAccepted: "Preferences saved on this device.",
+    supportCreditsAnswer:
+      "You start with 10,000 fictional credits. They only exist in this browser and can be restored at any time.",
+    supportGamesAnswer:
+      "Choose any game card. Each round and result is simulated locally.",
+    supportMoneyAnswer:
+      "No. This is only a demo: there are no payments, deposits, withdrawals, or real prizes.",
+    promotionsTitle: "Demo promotions",
+    promotionsText:
+      "Explore promotional cards for this experience. They are not redeemable bonuses.",
+    challengesTitle: "Challenges",
+    challengesText: "Local challenges to explore the games without real money.",
+    affiliatesTitle: "Affiliate program",
+    affiliatesText: "A demo area presenting a partner program.",
+    vipTitle: "NOVA Club",
+    vipText: "A visual preview of fictional levels and rewards.",
+    blogTitle: "NOVA Blog",
+    blogText: "Demo articles about games, design, and digital safety.",
+    forumTitle: "Community",
+    forumText: "An illustrative community space. No messages are sent.",
+    sponsorsTitle: "Sponsors",
+    sponsorsText: "Partner brand area in a demo environment.",
+    responsiblePageTitle: "Responsible play",
+    responsiblePageText:
+      "NOVA Play Demo was created exclusively to demonstrate an interface. It does not offer real-money games, wagers, payments, or prizes. Take breaks and do not use this concept as encouragement to gamble.",
+    backHome: "Back to home",
+    resetDemo: "Restore demo credits",
+    memberDemo: "Local demo profile",
+    categorySlots: "Slot",
+    categoryTable: "Table",
+    categoryInstant: "Instant",
+    popular: "POPULAR",
+    gameRound: "Demo round",
+    matchLeague: "DEMO LEAGUE",
+    matchTime: "Today · Local simulation",
+    homeTeam: "Aurora FC",
+    awayTeam: "Tide United",
+    basketballHome: "North Wolves",
+    basketballAway: "Vale Comets",
+    esportsHome: "Neon Foxes",
+    esportsAway: "Pixel Titans",
+    homeDraw: "Home",
+    draw: "Draw",
+    away: "Away",
+    stakeNotice:
+      "Each selection uses 50 fictional credits. No real wager is placed.",
+  },
 };
-const p=(key,vars={})=>{const text=sectionText[language][key]||sectionText.pt[key]||key;return text.replace(/\{(\w+)\}/g,(_,name)=>vars[name]??"")};
-let demoRounds=Number(localStorage.getItem("nova-rounds")||0);let demoPaused=false;let pauseTimer=null;let activeSection=null;
-const games=[{id:"olympus",title:"Gates of Olympus",provider:"NOVA",category:"slots",icon:"⚡",gradient:"linear-gradient(145deg,#207fc5,#182650 75%)",players:"666",description:"A mythical slot-inspired demo round with a fictional credit balance."},{id:"golden",title:"Golden Fortune",provider:"NOVA",category:"slots",icon:"☀️",gradient:"linear-gradient(145deg,#d08a28,#57351e 78%)",players:"595",description:"A golden-themed demo slot. Results are local and have no cash value."},{id:"deepblue",title:"Deep Blue",provider:"NOVA",category:"instant",icon:"🦈",gradient:"linear-gradient(145deg,#39bbde,#145b86 76%)",players:"229",description:"An ocean-themed instant game for demonstration only."},{id:"vegas",title:"Neon Nights",provider:"NOVA",category:"slots",icon:"🌃",gradient:"linear-gradient(145deg,#ec43c5,#401b77 77%)",players:"302",description:"A neon city slot-style demo with playful local results."},{id:"odins",title:"Odin's Vault",provider:"NOVA",category:"table",icon:"⚒️",gradient:"linear-gradient(145deg,#b97032,#3c2a22 78%)",players:"237",description:"A fantasy-themed table game preview using fictional credits."},{id:"wayfarers",title:"Wayfarer's Forge",provider:"NOVA",category:"table",icon:"🛡️",gradient:"linear-gradient(145deg,#c18d49,#30404e 78%)",players:"314",description:"A strategy-inspired demo table. No prizes or money involved."},{id:"wicked",title:"Wicked Grin",provider:"NOVA",category:"instant",icon:"☠️",gradient:"linear-gradient(145deg,#d52935,#51213f 80%)",players:"115",description:"A mischievous instant-play demo, powered by local random outcomes."},{id:"chaos",title:"Unleashed Chaos",provider:"NOVA",category:"slots",icon:"🐈‍⬛",gradient:"linear-gradient(145deg,#bf44ba,#35225e 80%)",players:"80",description:"A colorful fantasy slot concept with fictional credits."},{id:"royal",title:"Royal Table",provider:"NOVA",category:"table",icon:"♛",gradient:"linear-gradient(145deg,#bda458,#343258 78%)",players:"72",description:"A classic table-game interface preview. Demo balance only."},{id:"lucky",title:"Lucky Seven",provider:"NOVA",category:"instant",icon:"🎲",gradient:"linear-gradient(145deg,#df5b36,#702f2a 78%)",players:"54",description:"A quick dice-inspired round in this local simulation."},{id:"aurora",title:"Aurora Spin",provider:"NOVA",category:"slots",icon:"🌌",gradient:"linear-gradient(145deg,#397fc5,#39305f 78%)",players:"48",description:"Northern-light colors and a simple local demo round."},{id:"poker",title:"Poker Room",provider:"NOVA",category:"table",icon:"🂡",gradient:"linear-gradient(145deg,#31765e,#183f3f 78%)",players:"41",description:"A card-table visual prototype. No real stakes or rewards."}];
-const matches=[{home:"homeTeam",away:"awayTeam",sport:"⚽",league:"Premier Demo League",odds:["1.82","3.40","4.20"]},{home:"basketballHome",away:"basketballAway",sport:"🏀",league:"Basketball Demo",odds:["1.95","—","1.88"]},{home:"esportsHome",away:"esportsAway",sport:"⌨",league:"NOVA Esports Demo",odds:["2.10","3.10","1.72"]}];
-let language=localStorage.getItem("nova-lang")||"pt";let balance=Number(localStorage.getItem("nova-balance")||10000);let category="all";let query="";let activeGame=null;let stake=50;let toastTimer;
-const $=s=>document.querySelector(s);const $$=s=>[...document.querySelectorAll(s)];const t=(key,vars={})=>{let text=translations[language][key]||translations.pt[key]||key;return text.replace(/\{(\w+)\}/g,(_,name)=>vars[name]??"")};
-function formatBalance(){return new Intl.NumberFormat(language==="pt"?"pt-BR":"en-US").format(balance)}function saveBalance(){localStorage.setItem("nova-balance",String(balance));$("#balance").textContent=formatBalance();const modalBalance=$("#modalContent .modal-balance strong");if(modalBalance)modalBalance.textContent=`${formatBalance()} ◉`;const heroBalance=$("#heroBalance");if(heroBalance)heroBalance.textContent=formatBalance()}
-function applyLanguage(){document.documentElement.lang=language==="pt"?"pt-BR":"en";$("#resetBalance").setAttribute("aria-label",p("creditTitle"));$(".stats-row").setAttribute("aria-label",t("statsLabel"));$$('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(translations[language][key])el.innerHTML=translations[language][key]});$$('[data-i18n-placeholder]').forEach(el=>el.placeholder=t(el.dataset.i18nPlaceholder));$("#languageName").textContent=language==="pt"?"Português":"English";$("#balance").textContent=formatBalance();renderGames();renderMatches();if(activeGame)renderGameModal();localStorage.setItem("nova-lang",language)}
-function renderGames(){const list=games.filter(g=>(category==="all"||g.category===category)&&(`${g.title} ${g.provider}`).toLowerCase().includes(query.toLowerCase()));$("#gamesGrid").innerHTML=list.map(g=>`<button class="game-card" data-game="${g.id}" aria-label="${t("play")}: ${g.title}"><div class="game-art" style="background:${g.gradient}"><span class="game-provider">N</span><span class="game-glyph">${g.icon}</span><span class="game-label">${g.title}</span></div><div class="game-meta"><span><i class="live-dot"></i>${g.players} ${t("players")}</span><span>${g.provider}</span></div></button>`).join("");$("#emptySearch").hidden=list.length>0;$$("[data-game]").forEach(button=>button.addEventListener("click",()=>openGame(button.dataset.game)))}
-function renderMatches(){$("#matchList").innerHTML=matches.map(m=>`<article class="match-card"><div class="match-info"><span class="match-league">${m.sport} ${t("matchLeague")} · ${m.league}</span><strong class="teams">${t(m.home)} <span class="versus">VS</span> ${t(m.away)}</strong><span class="match-time">${t("matchTime")} · ${t("stakeNotice")}</span></div><div class="odds">${m.odds.map((odd,i)=>`<button class="odd-button" data-team="${i===0?t("homeDraw"):i===1?t("draw"):t("away")}" data-odd="${odd}"><span>${i===0?t("homeDraw"):i===1?t("draw"):t("away")}</span><b>${odd}</b></button>`).join("")}</div></article>`).join("");$$('.odd-button').forEach(button=>button.addEventListener("click",()=>{const team=button.dataset.team;const amount=50;if(demoPaused){showToast(p("pauseOn"));return}if(balance<amount){showToast(t("lowBalance"));return}if(!window.confirm(t("selectedBet",{team})+" "+t("stakeNotice")))return;balance-=amount;saveBalance();showToast(t("betPlaced",{amount}))}))}
-function openGame(id){if(demoPaused){showToast(p("pauseOn"));return}activeSection=null;activeGame=games.find(g=>g.id===id);if(!activeGame)return;stake=50;$("#modalBackdrop").hidden=false;renderGameModal()}
-function renderGameModal(){if(!activeGame)return;$("#modalContent").innerHTML=`<div class="section-kicker">${t("gameRound")}</div><h2>${activeGame.title}</h2><p>${t("gameDescription")}</p><div class="modal-game-art" style="background:${activeGame.gradient}">${activeGame.icon}</div><div class="modal-balance"><span>${t("balance")}</span><strong>${formatBalance()} ◉</strong></div><div class="form-field"><label>${t("betSize")}</label><div class="bet-select">${[10,50,100,250].map(amount=>`<button class="bet-chip ${stake===amount?"selected":""}" data-stake="${amount}">${amount}</button>`).join("")}</div></div><button class="button game-action" id="spinButton">${activeGame.category==="table"?"♠ ":"✦ "}${t("spin")}</button><div class="game-result" id="gameResult"></div><p class="modal-note">${t("demoOnly")}</p>`;$$('[data-stake]').forEach(button=>button.addEventListener("click",()=>{stake=Number(button.dataset.stake);renderGameModal()}));$("#spinButton").addEventListener("click",playRound)}
-function playRound(){if(demoPaused){showToast(p("pauseOn"));return}if(balance<stake){showToast(t("lowBalance"));return}balance-=stake;demoRounds+=1;localStorage.setItem("nova-rounds",String(demoRounds));const won=Math.random()<.34;const payout=won?stake*2:0;if(won)balance+=payout;saveBalance();const result=$("#gameResult");result.textContent=won?t("win",{amount:payout-stake}):t("lose",{amount:stake});result.style.color=won?"#77df9e":"#e7b8a2";$("#spinButton").disabled=true;setTimeout(()=>{const button=$("#spinButton");if(button)button.disabled=false},650)}
-function closeModal(){$("#modalBackdrop").hidden=true;activeGame=null;activeSection=null}function showToast(message){const el=$("#toast");el.textContent=message;el.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove("show"),2400)}
-function showAccount(){const saved=localStorage.getItem("nova-nickname")||"";$("#modalBackdrop").hidden=false;$("#modalContent").innerHTML=`<div class="section-kicker">${t("memberDemo")}</div><h2>${t("register")}</h2><p>${t("nicknameLabel")}</p><div class="form-field"><label for="nickname">${t("nickname")}</label><input id="nickname" maxlength="20" placeholder="NOVA player" value="${saved.replace(/[&<>"']/g,"")}" /></div><button class="button game-action" id="continueAccount">${t("continueDemo")}</button><p class="modal-info">${t("accountNotice")}</p>`;$("#continueAccount").addEventListener("click",()=>{const name=$("#nickname").value.trim()||"NOVA player";localStorage.setItem("nova-nickname",name);closeModal();showToast(t("welcome",{name}))})}
-function escapeHtml(value){return value.replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]))}
-function showSection(view){activeGame=null;activeSection=view;const title=view==="responsible"?t("responsiblePageTitle"):t(view+"Title"),description=view==="responsible"?p("responsibleBody"):t(view+"Text");let content="";
-if(view==="promotions")content=`<p>${p("promoBody")}</p><div class="interactive-card"><strong>${p("promoTitle")}</strong><p>${p("promoReward")}</p><button class="button primary" id="claimPromo">${localStorage.getItem("nova-promo-claimed")?p("claimed"):p("claim")}</button></div><p class="modal-note">${p("localOnly")}</p>`;
-if(view==="challenges")content=`<p>${p("challengeBody")}</p><div class="section-cards"><div class="interactive-card"><strong>${p("creditsChallenge")}</strong><p>${p("rounds")}: ${Math.min(demoRounds,5)} / 5</p><button class="button primary" id="challengePlay">${p("challengePlay")}</button></div><div class="interactive-card"><strong>${p("sportsChallenge")}</strong><p>${p("noPayments")}</p><button class="button subtle" id="challengeSports">${p("challengeSports")}</button></div></div><p class="modal-note">${p("localOnly")}</p>`;
-if(view==="affiliates")content=`<p>${p("affiliateBody")}</p><div class="interactive-card"><strong>${p("affiliateTitle")}</strong><p class="demo-code">${p("affiliateCode")}</p><button class="button primary" id="copyAffiliate">${p("copyCode")}</button></div><p class="modal-note">${p("localOnly")}</p>`;
-if(view==="vip")content=`<p>${p("vipBody")}</p><div class="interactive-card"><strong>${t("memberDemo")}</strong><p>${p("rounds")}: ${demoRounds}</p><div class="progress-track"><span style="width:${Math.min(demoRounds/5*100,100)}%"></span></div><button class="button primary" id="claimVip" ${demoRounds<5||localStorage.getItem("nova-vip-claimed")?"disabled":""}>${localStorage.getItem("nova-vip-claimed")?p("vipClaimed"):demoRounds<5?p("vipLocked"):p("vipReward")}</button></div><p class="modal-note">${p("localOnly")}</p>`;
-if(view==="blog")content=`<p>${p("blogBody")}</p><div class="article-list"><details class="interactive-card"><summary>${p("article1")}</summary><p>${p("article1body")}</p></details><details class="interactive-card"><summary>${p("article2")}</summary><p>${p("article2body")}</p></details><details class="interactive-card"><summary>${p("article3")}</summary><p>${p("article3body")}</p></details></div>`;
-if(view==="forum"){let posts=[];try{posts=JSON.parse(localStorage.getItem("nova-forum-posts")||"[]")}catch{}content=`<p>${p("forumBody")}</p><form id="forumForm" class="local-forum"><label for="forumMessage">${p("forumPlaceholder")}</label><textarea id="forumMessage" maxlength="240" required placeholder="${p("forumPlaceholder")}"></textarea><button class="button primary" type="submit">${p("forumPost")}</button></form><div id="forumPosts" class="article-list">${posts.length?posts.slice().reverse().map(post=>`<div class="interactive-card local-post"><strong>${escapeHtml(post.name)}</strong><p>${escapeHtml(post.message)}</p></div>`).join(""):`<p>${p("forumEmpty")}</p>`}</div>`}
-if(view==="sponsors")content=`<p>${p("sponsorBody")}</p><div class="section-cards"><button class="interactive-card sponsor-card" data-sponsor="NOVA Lab"><strong>NOVA Lab</strong><span>Interface &amp; simulation</span></button><button class="interactive-card sponsor-card" data-sponsor="Blue Circuit"><strong>Blue Circuit</strong><span>Industrial design demo</span></button><button class="interactive-card sponsor-card" data-sponsor="Golden Pixel"><strong>Golden Pixel</strong><span>Visual games demo</span></button></div><div id="sponsorMessage" class="modal-info">${p("sponsorSelected")}: NOVA Lab</div>`;
-if(view==="responsible")content=`<p>${p("responsibleBody")}</p><div class="interactive-card"><strong>${t("responsibleTitle")}</strong><p>${p("pauseDisclosure")}</p><button class="button primary" id="pauseDemo">${demoPaused?p("pauseResume"):p("pauseStart")}</button></div><p class="modal-note">${p("localOnly")}</p>`;
-if(!content)content=`<p>${description}</p><div class="modal-info">${t("demoOnly")}</div>`;
-$("#modalBackdrop").hidden=false;$("#modalContent").innerHTML=`<div class="section-kicker">NOVA PLAY DEMO</div><h2>${title}</h2>${content}<button class="button game-action" id="infoClose">${t("backHome")}</button>`;$("#infoClose").addEventListener("click",closeModal);
-const claim=$("#claimPromo");if(claim)claim.addEventListener("click",()=>{if(localStorage.getItem("nova-promo-claimed")){showToast(p("claimed"));return}localStorage.setItem("nova-promo-claimed","1");balance+=500;saveBalance();showSection("promotions");showToast(p("claimed"))});
-const play=$("#challengePlay");if(play)play.addEventListener("click",()=>openGame("olympus"));const sport=$("#challengeSports");if(sport)sport.addEventListener("click",()=>{closeModal();setMainTab("sports")});
-const copy=$("#copyAffiliate");if(copy)copy.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(p("affiliateCode"));showToast(p("copied"))}catch{showToast(p("affiliateCode"))}});
-const vip=$("#claimVip");if(vip&&!vip.disabled)vip.addEventListener("click",()=>{if(localStorage.getItem("nova-vip-claimed"))return;localStorage.setItem("nova-vip-claimed","1");balance+=250;saveBalance();showSection("vip");showToast(p("vipClaimed"))});
-const form=$("#forumForm");if(form)form.addEventListener("submit",event=>{event.preventDefault();const message=$("#forumMessage").value.trim();if(!message)return;let items=[];try{items=JSON.parse(localStorage.getItem("nova-forum-posts")||"[]")}catch{}items.push({name:localStorage.getItem("nova-nickname")||"NOVA Player",message});localStorage.setItem("nova-forum-posts",JSON.stringify(items.slice(-20)));showSection("forum");showToast(p("forumSent"))});
-$$("[data-sponsor]").forEach(button=>button.addEventListener("click",()=>{$("#sponsorMessage").textContent=`${p("sponsorSelected")}: ${button.dataset.sponsor}`}));
-const pause=$("#pauseDemo");if(pause)pause.addEventListener("click",()=>{demoPaused=!demoPaused;clearTimeout(pauseTimer);if(demoPaused)pauseTimer=setTimeout(()=>{demoPaused=false},900000);showSection("responsible");showToast(demoPaused?p("pauseOn"):p("pauseOff"))})}
-function showCreditsModal(){$("#modalBackdrop").hidden=false;activeGame=null;activeSection="credits";$("#modalContent").innerHTML=`<div class="section-kicker">${p("localOnly")}</div><h2>${p("creditTitle")}</h2><p>${p("creditDescription")}</p><form id="creditForm" class="local-forum"><label for="creditAmount">${p("creditAmount")}</label><input id="creditAmount" type="number" min="1" max="1000000000" step="1" required inputmode="numeric"><button class="button primary" type="submit">${p("creditAdd")}</button></form><button class="button subtle" id="restoreDemo">${p("creditRestore")}</button><p class="modal-note">${p("localOnly")}</p>`;$("#creditForm").addEventListener("submit",event=>{event.preventDefault();const amount=Number($("#creditAmount").value);if(!Number.isSafeInteger(amount)||amount<1||amount>1000000000){showToast(p("creditError"));return}balance+=amount;saveBalance();closeModal();showToast(p("creditAdded",{amount:formatBalanceAmount(amount)}))});$("#restoreDemo").addEventListener("click",()=>{balance=10000;saveBalance();closeModal();showToast(t("restored"))})}
-function formatBalanceAmount(amount){return new Intl.NumberFormat(language==="pt"?"pt-BR":"en-US").format(amount)}
-function showInfo(title,text){showSection("responsible")}
-function selectView(view){if(view==="casino")view="home";$$('.nav-item[data-view]').forEach(el=>el.classList.toggle("active",el.dataset.view===view));if(view==="home"){$("#casinoView").hidden=false;$("#sportsView").hidden=true;$("#hero").hidden=false;closeModal();return}if(view==="sports"){$("#casinoView").hidden=true;$("#sportsView").hidden=false;$("#hero").hidden=true;closeModal();return}showSection(view)}
-function setMainTab(which){$$('[data-main-tab]').forEach(el=>el.classList.toggle("selected",el.dataset.mainTab===which));$$('.side-switch button').forEach(el=>el.classList.toggle("side-switch-active",el.dataset.mainTab===which));selectView(which)}
-$$('[data-main-tab]').forEach(button=>button.addEventListener("click",()=>setMainTab(button.dataset.mainTab)));$$(".nav-item[data-view]").forEach(button=>button.addEventListener("click",()=>selectView(button.dataset.view)));$("#languageButton").addEventListener("click",()=>$("#languageMenu").classList.toggle("show"));$$("[data-language]").forEach(button=>button.addEventListener("click",()=>{language=button.dataset.language;$("#languageMenu").classList.remove("show");applyLanguage()}));$("#searchInput").addEventListener("input",event=>{query=event.target.value;renderGames()});$$(".category-chip").forEach(button=>button.addEventListener("click",()=>{$$(".category-chip").forEach(chip=>chip.classList.remove("selected"));button.classList.add("selected");category=button.dataset.category;renderGames()}));$("#seeAll").addEventListener("click",()=>{$$(".category-chip").forEach(chip=>chip.classList.remove("selected"));$("[data-category=all]").classList.add("selected");category="all";query="";$("#searchInput").value="";renderGames()});$("#playNow").addEventListener("click",()=>$("#gamesGrid").scrollIntoView({behavior:"smooth",block:"center"}));$("#loginButton").addEventListener("click",showAccount);$("#registerButton").addEventListener("click",showAccount);$("#resetBalance").addEventListener("click",showCreditsModal);$("#modalClose").addEventListener("click",closeModal);$("#modalBackdrop").addEventListener("click",event=>{if(event.target.id==="modalBackdrop")closeModal()});$("#responsibleDetails").addEventListener("click",()=>showSection("responsible"));$("#supportLink").addEventListener("click",()=>$("#supportPanel").hidden=!$("#supportPanel").hidden);$("#supportFab").addEventListener("click",()=>$("#supportPanel").hidden=!$("#supportPanel").hidden);$("#supportClose").addEventListener("click",()=>$("#supportPanel").hidden=true);$$('[data-support]').forEach(button=>button.addEventListener("click",()=>{const key={credits:"supportCreditsAnswer",games:"supportGamesAnswer",money:"supportMoneyAnswer"}[button.dataset.support];$("#supportAnswer").textContent=t(key)}));$("#filtersButton").addEventListener("click",()=>{const choices=["all","slots","table","instant"],next=choices[(choices.indexOf(category)+1)%choices.length];category=next;$$(`.category-chip`).forEach(chip=>{chip.classList.toggle("selected",chip.dataset.category===category)});renderGames();showToast(t(({all:"allGames",slots:"slots",table:"tableGames",instant:"instantGames"})[category]))});$("#acceptCookies").addEventListener("click",()=>{localStorage.setItem("nova-cookie-ok","1");$("#cookieBanner").hidden=true;showToast(t("cookiesAccepted"))});if(localStorage.getItem("nova-cookie-ok"))$("#cookieBanner").hidden=true;$("#openMenu").addEventListener("click",()=>{$("#sidebar").classList.add("open");$("#mobileScrim").classList.add("show")});$("#closeMenu").addEventListener("click",closeMenu);$("#mobileScrim").addEventListener("click",closeMenu);function closeMenu(){$("#sidebar").classList.remove("open");$("#mobileScrim").classList.remove("show")}document.addEventListener("keydown",event=>{if((event.ctrlKey||event.metaKey)&&event.key.toLowerCase()==="k"){event.preventDefault();$("#searchInput").focus()}if(event.key==="Escape")closeModal()});
-applyLanguage();saveBalance();renderMatches();
+const sectionText = {
+  pt: {
+    claim: "Resgatar recompensa demo",
+    claimed: "Recompensa demo resgatada",
+    promoReward: "Recompensa única de 500 créditos fictícios",
+    challengePlay: "Jogar uma rodada demo",
+    challengeSports: "Ver partidas demo",
+    rounds: "Rodadas concluídas",
+    copyCode: "Copiar código demo",
+    copied: "Código copiado",
+    vipReward: "Resgatar 250 créditos demo",
+    vipLocked: "Complete 5 rodadas para liberar",
+    vipClaimed: "Recompensa VIP demo resgatada",
+    article1: "Como funciona uma rodada demo",
+    article1body:
+      "Cada jogo usa créditos fictícios e um resultado gerado localmente. O saldo não representa dinheiro nem prêmio.",
+    article2: "Como ler o painel SCADA",
+    article2body:
+      "As estatísticas e partidas desta página são ilustrações da interface. Não representam atividade ou resultados ao vivo.",
+    article3: "Segurança no jogo",
+    article3body:
+      "Faça pausas e use esta página somente como demonstração. Não há apostas com dinheiro real.",
+    forumPlaceholder: "Escreva uma mensagem para o mural local",
+    forumPost: "Publicar no mural local",
+    forumEmpty: "Ainda não há mensagens neste dispositivo.",
+    forumSent: "Mensagem salva apenas neste dispositivo.",
+    sponsorDetails: "Selecionar destaque",
+    sponsorSelected: "Destaque selecionado",
+    pauseStart: "Iniciar pausa de 15 minutos",
+    pauseResume: "Retomar demonstração",
+    pauseOn: "Pausa ativa. Rodadas e palpites demo estão bloqueados.",
+    pauseOff: "Demonstração retomada.",
+    pauseDisclosure: "Pausa afeta somente este simulador neste dispositivo.",
+    creditTitle: "Adicionar créditos demo",
+    creditDescription:
+      "Escolha qualquer quantidade de créditos fictícios. Nenhum Pix ou pagamento é feito.",
+    creditAmount: "Quantidade de créditos",
+    creditAdd: "Adicionar créditos fictícios",
+    creditRestore: "Restaurar para 10.000",
+    creditError: "Informe uma quantidade inteira maior que zero.",
+    creditAdded: "{amount} créditos fictícios adicionados.",
+    localOnly:
+      "Tudo fica neste navegador; não existe depósito, saque ou valor financeiro.",
+    promoTitle: "Promoção NOVA demo",
+    promoBody:
+      "Teste o cartão de promoção. A recompensa só altera o saldo fictício deste navegador.",
+    challengeTitle: "Desafios demo",
+    challengeBody:
+      "Acompanhe objetivos locais enquanto explora a demonstração.",
+    affiliateTitle: "Indique um amigo",
+    affiliateBody:
+      "Código ilustrativo para testar a interface. Não há cadastro de afiliado nem comissão real.",
+    affiliateCode: "NOVA-DEMO-2026",
+    vipBody: "Seu progresso usa somente rodadas feitas neste navegador.",
+    blogBody: "Artigos curtos para apresentar a experiência NOVA Play.",
+    forumBody:
+      "Mural local de demonstração. As mensagens não são enviadas a um servidor.",
+    sponsorBody:
+      "Explore destaques fictícios criados para demonstrar esta área.",
+    responsibleBody:
+      "Use a pausa para interromper as rodadas demo. Os controles de jogo e esportes ficam bloqueados até retomar.",
+    creditsChallenge: "Jogue 5 rodadas",
+    sportsChallenge: "Explore a seção de esportes",
+    noPayments: "Sem pagamentos reais",
+  },
+  en: {
+    claim: "Claim demo reward",
+    claimed: "Demo reward claimed",
+    promoReward: "One-time reward of 500 fictional credits",
+    challengePlay: "Play a demo round",
+    challengeSports: "View demo matches",
+    rounds: "Completed rounds",
+    copyCode: "Copy demo code",
+    copied: "Code copied",
+    vipReward: "Claim 250 demo credits",
+    vipLocked: "Complete 5 rounds to unlock",
+    vipClaimed: "Demo VIP reward claimed",
+    article1: "How a demo round works",
+    article1body:
+      "Each game uses fictional credits and a locally generated result. The balance is not money or a prize.",
+    article2: "Reading the SCADA panel",
+    article2body:
+      "Statistics and matches on this page illustrate the interface. They do not represent live activity or results.",
+    article3: "Play safely",
+    article3body:
+      "Take breaks and use this page only as a demonstration. No real money wagers are available.",
+    forumPlaceholder: "Write a message for the local board",
+    forumPost: "Post to local board",
+    forumEmpty: "No messages on this device yet.",
+    forumSent: "Message saved on this device only.",
+    sponsorDetails: "Select feature",
+    sponsorSelected: "Feature selected",
+    pauseStart: "Start a 15-minute break",
+    pauseResume: "Resume demo",
+    pauseOn: "Break active. Demo rounds and picks are paused.",
+    pauseOff: "Demo resumed.",
+    pauseDisclosure: "The break only affects this simulator on this device.",
+    creditTitle: "Add demo credits",
+    creditDescription:
+      "Choose any amount of fictional credits. No Pix or payment is made.",
+    creditAmount: "Credit amount",
+    creditAdd: "Add fictional credits",
+    creditRestore: "Restore to 10,000",
+    creditError: "Enter a whole number greater than zero.",
+    creditAdded: "{amount} fictional credits added.",
+    localOnly:
+      "Everything stays in this browser; no deposit, withdrawal, or monetary value.",
+    promoTitle: "NOVA demo promotion",
+    promoBody:
+      "Try the promotion card. The reward only changes the fictional balance in this browser.",
+    challengeTitle: "Demo challenges",
+    challengeBody: "Track local goals while exploring the demo.",
+    affiliateTitle: "Invite a friend",
+    affiliateBody:
+      "Illustrative code to test this section. No affiliate account or real commission.",
+    affiliateCode: "NOVA-DEMO-2026",
+    vipBody: "Your progress uses only rounds played in this browser.",
+    blogBody: "Short articles introducing the NOVA Play experience.",
+    forumBody: "Local demo board. Messages are not sent to a server.",
+    sponsorBody:
+      "Explore fictional features created to demonstrate this section.",
+    responsibleBody:
+      "Use the break to pause demo rounds. Game and sports controls stay locked until you resume.",
+    creditsChallenge: "Play 5 rounds",
+    sportsChallenge: "Explore the sports section",
+    noPayments: "No real payments",
+  },
+};
+const p = (key, vars = {}) => {
+  const text = sectionText[language][key] || sectionText.pt[key] || key;
+  return text.replace(/\{(\w+)\}/g, (_, name) => vars[name] ?? "");
+};
+let demoRounds = Number(localStorage.getItem("nova-rounds") || 0);
+let demoPaused = false;
+let pauseTimer = null;
+let activeSection = null;
+const games = [
+  {
+    id: "olympus",
+    title: "Gates of Olympus",
+    provider: "NOVA",
+    category: "slots",
+    icon: "⚡",
+    gradient: "linear-gradient(145deg,#207fc5,#182650 75%)",
+    players: "666",
+    description:
+      "A mythical slot-inspired demo round with a fictional credit balance.",
+  },
+  {
+    id: "golden",
+    title: "Golden Fortune",
+    provider: "NOVA",
+    category: "slots",
+    icon: "☀️",
+    gradient: "linear-gradient(145deg,#d08a28,#57351e 78%)",
+    players: "595",
+    description:
+      "A golden-themed demo slot. Results are local and have no cash value.",
+  },
+  {
+    id: "deepblue",
+    title: "Deep Blue",
+    provider: "NOVA",
+    category: "instant",
+    icon: "🦈",
+    gradient: "linear-gradient(145deg,#39bbde,#145b86 76%)",
+    players: "229",
+    description: "An ocean-themed instant game for demonstration only.",
+  },
+  {
+    id: "vegas",
+    title: "Neon Nights",
+    provider: "NOVA",
+    category: "slots",
+    icon: "🌃",
+    gradient: "linear-gradient(145deg,#ec43c5,#401b77 77%)",
+    players: "302",
+    description: "A neon city slot-style demo with playful local results.",
+  },
+  {
+    id: "odins",
+    title: "Odin's Vault",
+    provider: "NOVA",
+    category: "table",
+    icon: "⚒️",
+    gradient: "linear-gradient(145deg,#b97032,#3c2a22 78%)",
+    players: "237",
+    description: "A fantasy-themed table game preview using fictional credits.",
+  },
+  {
+    id: "wayfarers",
+    title: "Wayfarer's Forge",
+    provider: "NOVA",
+    category: "table",
+    icon: "🛡️",
+    gradient: "linear-gradient(145deg,#c18d49,#30404e 78%)",
+    players: "314",
+    description: "A strategy-inspired demo table. No prizes or money involved.",
+  },
+  {
+    id: "wicked",
+    title: "Wicked Grin",
+    provider: "NOVA",
+    category: "instant",
+    icon: "☠️",
+    gradient: "linear-gradient(145deg,#d52935,#51213f 80%)",
+    players: "115",
+    description:
+      "A mischievous instant-play demo, powered by local random outcomes.",
+  },
+  {
+    id: "chaos",
+    title: "Unleashed Chaos",
+    provider: "NOVA",
+    category: "slots",
+    icon: "🐈‍⬛",
+    gradient: "linear-gradient(145deg,#bf44ba,#35225e 80%)",
+    players: "80",
+    description: "A colorful fantasy slot concept with fictional credits.",
+  },
+  {
+    id: "royal",
+    title: "Royal Table",
+    provider: "NOVA",
+    category: "table",
+    icon: "♛",
+    gradient: "linear-gradient(145deg,#bda458,#343258 78%)",
+    players: "72",
+    description: "A classic table-game interface preview. Demo balance only.",
+  },
+  {
+    id: "lucky",
+    title: "Lucky Seven",
+    provider: "NOVA",
+    category: "instant",
+    icon: "🎲",
+    gradient: "linear-gradient(145deg,#df5b36,#702f2a 78%)",
+    players: "54",
+    description: "A quick dice-inspired round in this local simulation.",
+  },
+  {
+    id: "aurora",
+    title: "Aurora Spin",
+    provider: "NOVA",
+    category: "slots",
+    icon: "🌌",
+    gradient: "linear-gradient(145deg,#397fc5,#39305f 78%)",
+    players: "48",
+    description: "Northern-light colors and a simple local demo round.",
+  },
+  {
+    id: "poker",
+    title: "Poker Room",
+    provider: "NOVA",
+    category: "table",
+    icon: "🂡",
+    gradient: "linear-gradient(145deg,#31765e,#183f3f 78%)",
+    players: "41",
+    description: "A card-table visual prototype. No real stakes or rewards.",
+  },
+];
+const matches = [
+  {
+    home: "homeTeam",
+    away: "awayTeam",
+    sport: "⚽",
+    league: "Premier Demo League",
+    odds: ["1.82", "3.40", "4.20"],
+  },
+  {
+    home: "basketballHome",
+    away: "basketballAway",
+    sport: "🏀",
+    league: "Basketball Demo",
+    odds: ["1.95", "—", "1.88"],
+  },
+  {
+    home: "esportsHome",
+    away: "esportsAway",
+    sport: "⌨",
+    league: "NOVA Esports Demo",
+    odds: ["2.10", "3.10", "1.72"],
+  },
+];
+let language = localStorage.getItem("nova-lang") || "pt";
+let balance = Number(localStorage.getItem("nova-balance") || 10000);
+let category = "all";
+let query = "";
+let activeGame = null;
+let stake = 50;
+let toastTimer;
+const $ = (s) => document.querySelector(s);
+const $$ = (s) => [...document.querySelectorAll(s)];
+const t = (key, vars = {}) => {
+  let text = translations[language][key] || translations.pt[key] || key;
+  return text.replace(/\{(\w+)\}/g, (_, name) => vars[name] ?? "");
+};
+function formatBalance() {
+  return new Intl.NumberFormat(language === "pt" ? "pt-BR" : "en-US").format(
+    balance,
+  );
+}
+function saveBalance() {
+  const count = document.getElementById("actual-rounds");
+  if (count) count.textContent = String(demoRounds);
+  localStorage.setItem("nova-balance", String(balance));
+  $("#balance").textContent = formatBalance();
+  const modalBalance = $("#modalContent .modal-balance strong");
+  if (modalBalance) modalBalance.textContent = `${formatBalance()} ◉`;
+  const heroBalance = $("#heroBalance");
+  if (heroBalance) heroBalance.textContent = formatBalance();
+}
+function applyLanguage() {
+  document.documentElement.lang = language === "pt" ? "pt-BR" : "en";
+  $("#resetBalance").setAttribute("aria-label", p("creditTitle"));
+  $(".stats-row").setAttribute("aria-label", t("statsLabel"));
+  $$("[data-i18n]").forEach((el) => {
+    const key = el.dataset.i18n;
+    if (translations[language][key]) el.innerHTML = translations[language][key];
+  });
+  $$("[data-i18n-placeholder]").forEach(
+    (el) => (el.placeholder = t(el.dataset.i18nPlaceholder)),
+  );
+  $("#languageName").textContent = language === "pt" ? "Português" : "English";
+  $("#balance").textContent = formatBalance();
+  renderGames();
+  renderMatches();
+  if (activeGame) renderGameModal();
+  localStorage.setItem("nova-lang", language);
+}
+function renderGames() {
+  const list = games.filter(
+    (g) =>
+      (category === "all" || g.category === category) &&
+      `${g.title} ${g.provider}`.toLowerCase().includes(query.toLowerCase()),
+  );
+  $("#gamesGrid").innerHTML = list
+    .map(
+      (g) =>
+        `<button class="game-card" data-game="${g.id}" aria-label="${t("play")}: ${g.title}"><div class="game-art" style="background:${g.gradient}"><span class="game-provider">N</span><span class="game-glyph">${g.icon}</span><span class="game-label">${g.title}</span></div><div class="game-meta"><span><i class="live-dot"></i>${g.players} ${t("players")}</span><span>${g.provider}</span></div></button>`,
+    )
+    .join("");
+  $("#emptySearch").hidden = list.length > 0;
+  $$("[data-game]").forEach((button) =>
+    button.addEventListener("click", () => openGame(button.dataset.game)),
+  );
+}
+function renderMatches() {
+  $("#matchList").innerHTML = matches
+    .map(
+      (m) =>
+        `<article class="match-card"><div class="match-info"><span class="match-league">${m.sport} ${t("matchLeague")} · ${m.league}</span><strong class="teams">${t(m.home)} <span class="versus">VS</span> ${t(m.away)}</strong><span class="match-time">${t("matchTime")} · ${t("stakeNotice")}</span></div><div class="odds">${m.odds.map((odd, i) => `<button class="odd-button" data-team="${i === 0 ? t("homeDraw") : i === 1 ? t("draw") : t("away")}" data-odd="${odd}"><span>${i === 0 ? t("homeDraw") : i === 1 ? t("draw") : t("away")}</span><b>${odd}</b></button>`).join("")}</div></article>`,
+    )
+    .join("");
+  $$(".odd-button").forEach((button) =>
+    button.addEventListener("click", () => {
+      const team = button.dataset.team;
+      const amount = 50;
+      if (demoPaused) {
+        showToast(p("pauseOn"));
+        return;
+      }
+      if (balance < amount) {
+        showToast(t("lowBalance"));
+        return;
+      }
+      if (!window.confirm(t("selectedBet", { team }) + " " + t("stakeNotice")))
+        return;
+      balance -= amount;
+      saveBalance();
+      showToast(t("betPlaced", { amount }));
+    }),
+  );
+}
+function openGame(id) {
+  if (demoPaused) {
+    showToast(p("pauseOn"));
+    return;
+  }
+  activeSection = null;
+  activeGame = games.find((g) => g.id === id);
+  if (!activeGame) return;
+  stake = 50;
+  $("#modalBackdrop").hidden = false;
+  renderGameModal();
+}
+function renderGameModal() {
+  if (!activeGame) return;
+  $("#modalContent").innerHTML =
+    `<div class="section-kicker">${t("gameRound")}</div><h2>${activeGame.title}</h2><p>${t("gameDescription")}</p><div class="modal-game-art" style="background:${activeGame.gradient}">${activeGame.icon}</div><div class="modal-balance"><span>${t("balance")}</span><strong>${formatBalance()} ◉</strong></div><div class="form-field"><label>${t("betSize")}</label><div class="bet-select">${[10, 50, 100, 250].map((amount) => `<button class="bet-chip ${stake === amount ? "selected" : ""}" data-stake="${amount}">${amount}</button>`).join("")}</div></div><button class="button game-action" id="spinButton">${activeGame.category === "table" ? "♠ " : "✦ "}${t("spin")}</button><div class="game-result" id="gameResult"></div><p class="modal-note">${t("demoOnly")}</p>`;
+  $$("[data-stake]").forEach((button) =>
+    button.addEventListener("click", () => {
+      stake = Number(button.dataset.stake);
+      renderGameModal();
+    }),
+  );
+  $("#spinButton").addEventListener("click", playRound);
+}
+function playRound() {
+  if (demoPaused) {
+    showToast(p("pauseOn"));
+    return;
+  }
+  if (balance < stake) {
+    showToast(t("lowBalance"));
+    return;
+  }
+  demoRounds += 1;
+  localStorage.setItem("nova-rounds", String(demoRounds));
+  const game =
+    activeGame.category === "slots"
+      ? "slots"
+      : activeGame.category === "table"
+        ? "roulette"
+        : "dice";
+  const engine = new GameSession(Math.min(balance, 100000000));
+  const round = engine.play(game, stake);
+  const won = round.net > 0;
+  const payout = round.payout;
+  balance = engine.balance;
+  const history = JSON.parse(localStorage.getItem("nova-history") || "[]");
+  history.push(round);
+  localStorage.setItem("nova-history", JSON.stringify(history.slice(-1000)));
+  saveBalance();
+  const result = $("#gameResult");
+  result.textContent = won
+    ? t("win", { amount: payout - stake })
+    : t("lose", { amount: stake });
+  result.style.color = won ? "#77df9e" : "#e7b8a2";
+  $("#spinButton").disabled = true;
+  setTimeout(() => {
+    const button = $("#spinButton");
+    if (button) button.disabled = false;
+  }, 650);
+}
+function closeModal() {
+  $("#modalBackdrop").hidden = true;
+  activeGame = null;
+  activeSection = null;
+}
+function showToast(message) {
+  const el = $("#toast");
+  el.textContent = message;
+  el.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove("show"), 2400);
+}
+function showAccount() {
+  const saved = localStorage.getItem("nova-nickname") || "";
+  $("#modalBackdrop").hidden = false;
+  $("#modalContent").innerHTML =
+    `<div class="section-kicker">${t("memberDemo")}</div><h2>${t("register")}</h2><p>${t("nicknameLabel")}</p><div class="form-field"><label for="nickname">${t("nickname")}</label><input id="nickname" maxlength="20" placeholder="NOVA player" value="${saved.replace(/[&<>"']/g, "")}" /></div><button class="button game-action" id="continueAccount">${t("continueDemo")}</button><p class="modal-info">${t("accountNotice")}</p>`;
+  $("#continueAccount").addEventListener("click", () => {
+    const name = $("#nickname").value.trim() || "NOVA player";
+    localStorage.setItem("nova-nickname", name);
+    closeModal();
+    showToast(t("welcome", { name }));
+  });
+}
+function escapeHtml(value) {
+  return value.replace(
+    /[&<>"']/g,
+    (char) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
+        char
+      ],
+  );
+}
+function showSection(view) {
+  activeGame = null;
+  activeSection = view;
+  const title =
+      view === "responsible" ? t("responsiblePageTitle") : t(view + "Title"),
+    description =
+      view === "responsible" ? p("responsibleBody") : t(view + "Text");
+  let content = "";
+  if (view === "promotions")
+    content = `<p>${p("promoBody")}</p><div class="interactive-card"><strong>${p("promoTitle")}</strong><p>${p("promoReward")}</p><button class="button primary" id="claimPromo">${localStorage.getItem("nova-promo-claimed") ? p("claimed") : p("claim")}</button></div><p class="modal-note">${p("localOnly")}</p>`;
+  if (view === "challenges")
+    content = `<p>${p("challengeBody")}</p><div class="section-cards"><div class="interactive-card"><strong>${p("creditsChallenge")}</strong><p>${p("rounds")}: ${Math.min(demoRounds, 5)} / 5</p><button class="button primary" id="challengePlay">${p("challengePlay")}</button></div><div class="interactive-card"><strong>${p("sportsChallenge")}</strong><p>${p("noPayments")}</p><button class="button subtle" id="challengeSports">${p("challengeSports")}</button></div></div><p class="modal-note">${p("localOnly")}</p>`;
+  if (view === "affiliates")
+    content = `<p>${p("affiliateBody")}</p><div class="interactive-card"><strong>${p("affiliateTitle")}</strong><p class="demo-code">${p("affiliateCode")}</p><button class="button primary" id="copyAffiliate">${p("copyCode")}</button></div><p class="modal-note">${p("localOnly")}</p>`;
+  if (view === "vip")
+    content = `<p>${p("vipBody")}</p><div class="interactive-card"><strong>${t("memberDemo")}</strong><p>${p("rounds")}: ${demoRounds}</p><div class="progress-track"><span style="width:${Math.min((demoRounds / 5) * 100, 100)}%"></span></div><button class="button primary" id="claimVip" ${demoRounds < 5 || localStorage.getItem("nova-vip-claimed") ? "disabled" : ""}>${localStorage.getItem("nova-vip-claimed") ? p("vipClaimed") : demoRounds < 5 ? p("vipLocked") : p("vipReward")}</button></div><p class="modal-note">${p("localOnly")}</p>`;
+  if (view === "blog")
+    content = `<p>${p("blogBody")}</p><div class="article-list"><details class="interactive-card"><summary>${p("article1")}</summary><p>${p("article1body")}</p></details><details class="interactive-card"><summary>${p("article2")}</summary><p>${p("article2body")}</p></details><details class="interactive-card"><summary>${p("article3")}</summary><p>${p("article3body")}</p></details></div>`;
+  if (view === "forum") {
+    let posts = [];
+    try {
+      posts = JSON.parse(localStorage.getItem("nova-forum-posts") || "[]");
+    } catch {}
+    content = `<p>${p("forumBody")}</p><form id="forumForm" class="local-forum"><label for="forumMessage">${p("forumPlaceholder")}</label><textarea id="forumMessage" maxlength="240" required placeholder="${p("forumPlaceholder")}"></textarea><button class="button primary" type="submit">${p("forumPost")}</button></form><div id="forumPosts" class="article-list">${
+      posts.length
+        ? posts
+            .slice()
+            .reverse()
+            .map(
+              (post) =>
+                `<div class="interactive-card local-post"><strong>${escapeHtml(post.name)}</strong><p>${escapeHtml(post.message)}</p></div>`,
+            )
+            .join("")
+        : `<p>${p("forumEmpty")}</p>`
+    }</div>`;
+  }
+  if (view === "sponsors")
+    content = `<p>${p("sponsorBody")}</p><div class="section-cards"><button class="interactive-card sponsor-card" data-sponsor="NOVA Lab"><strong>NOVA Lab</strong><span>Interface &amp; simulation</span></button><button class="interactive-card sponsor-card" data-sponsor="Blue Circuit"><strong>Blue Circuit</strong><span>Industrial design demo</span></button><button class="interactive-card sponsor-card" data-sponsor="Golden Pixel"><strong>Golden Pixel</strong><span>Visual games demo</span></button></div><div id="sponsorMessage" class="modal-info">${p("sponsorSelected")}: NOVA Lab</div>`;
+  if (view === "responsible")
+    content = `<p>${p("responsibleBody")}</p><div class="interactive-card"><strong>${t("responsibleTitle")}</strong><p>${p("pauseDisclosure")}</p><button class="button primary" id="pauseDemo">${demoPaused ? p("pauseResume") : p("pauseStart")}</button></div><p class="modal-note">${p("localOnly")}</p>`;
+  if (!content)
+    content = `<p>${description}</p><div class="modal-info">${t("demoOnly")}</div>`;
+  $("#modalBackdrop").hidden = false;
+  $("#modalContent").innerHTML =
+    `<div class="section-kicker">NOVA PLAY DEMO</div><h2>${title}</h2>${content}<button class="button game-action" id="infoClose">${t("backHome")}</button>`;
+  $("#infoClose").addEventListener("click", closeModal);
+  const claim = $("#claimPromo");
+  if (claim)
+    claim.addEventListener("click", () => {
+      if (localStorage.getItem("nova-promo-claimed")) {
+        showToast(p("claimed"));
+        return;
+      }
+      localStorage.setItem("nova-promo-claimed", "1");
+      balance += 500;
+      saveBalance();
+      showSection("promotions");
+      showToast(p("claimed"));
+    });
+  const play = $("#challengePlay");
+  if (play) play.addEventListener("click", () => openGame("olympus"));
+  const sport = $("#challengeSports");
+  if (sport)
+    sport.addEventListener("click", () => {
+      closeModal();
+      setMainTab("sports");
+    });
+  const copy = $("#copyAffiliate");
+  if (copy)
+    copy.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(p("affiliateCode"));
+        showToast(p("copied"));
+      } catch {
+        showToast(p("affiliateCode"));
+      }
+    });
+  const vip = $("#claimVip");
+  if (vip && !vip.disabled)
+    vip.addEventListener("click", () => {
+      if (localStorage.getItem("nova-vip-claimed")) return;
+      localStorage.setItem("nova-vip-claimed", "1");
+      balance += 250;
+      saveBalance();
+      showSection("vip");
+      showToast(p("vipClaimed"));
+    });
+  const form = $("#forumForm");
+  if (form)
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const message = $("#forumMessage").value.trim();
+      if (!message) return;
+      let items = [];
+      try {
+        items = JSON.parse(localStorage.getItem("nova-forum-posts") || "[]");
+      } catch {}
+      items.push({
+        name: localStorage.getItem("nova-nickname") || "NOVA Player",
+        message,
+      });
+      localStorage.setItem(
+        "nova-forum-posts",
+        JSON.stringify(items.slice(-20)),
+      );
+      showSection("forum");
+      showToast(p("forumSent"));
+    });
+  $$("[data-sponsor]").forEach((button) =>
+    button.addEventListener("click", () => {
+      $("#sponsorMessage").textContent =
+        `${p("sponsorSelected")}: ${button.dataset.sponsor}`;
+    }),
+  );
+  const pause = $("#pauseDemo");
+  if (pause)
+    pause.addEventListener("click", () => {
+      demoPaused = !demoPaused;
+      clearTimeout(pauseTimer);
+      if (demoPaused)
+        pauseTimer = setTimeout(() => {
+          demoPaused = false;
+        }, 900000);
+      showSection("responsible");
+      showToast(demoPaused ? p("pauseOn") : p("pauseOff"));
+    });
+}
+function showCreditsModal() {
+  $("#modalBackdrop").hidden = false;
+  activeGame = null;
+  activeSection = "credits";
+  $("#modalContent").innerHTML =
+    `<div class="section-kicker">${p("localOnly")}</div><h2>${p("creditTitle")}</h2><p>${p("creditDescription")}</p><form id="creditForm" class="local-forum"><label for="creditAmount">${p("creditAmount")}</label><input id="creditAmount" type="number" min="1" max="1000000000" step="1" required inputmode="numeric"><button class="button primary" type="submit">${p("creditAdd")}</button></form><button class="button subtle" id="restoreDemo">${p("creditRestore")}</button><p class="modal-note">${p("localOnly")}</p>`;
+  $("#creditForm").addEventListener("submit", (event) => {
+    event.preventDefault();
+    const amount = Number($("#creditAmount").value);
+    if (!Number.isSafeInteger(amount) || amount < 1 || amount > 1000000000) {
+      showToast(p("creditError"));
+      return;
+    }
+    balance += amount;
+    saveBalance();
+    closeModal();
+    showToast(p("creditAdded", { amount: formatBalanceAmount(amount) }));
+  });
+  $("#restoreDemo").addEventListener("click", () => {
+    balance = 10000;
+    saveBalance();
+    closeModal();
+    showToast(t("restored"));
+  });
+}
+function formatBalanceAmount(amount) {
+  return new Intl.NumberFormat(language === "pt" ? "pt-BR" : "en-US").format(
+    amount,
+  );
+}
+function showInfo(title, text) {
+  showSection("responsible");
+}
+function selectView(view) {
+  if (view === "casino") view = "home";
+  $$(".nav-item[data-view]").forEach((el) =>
+    el.classList.toggle("active", el.dataset.view === view),
+  );
+  if (view === "home") {
+    $("#casinoView").hidden = false;
+    $("#sportsView").hidden = true;
+    $("#hero").hidden = false;
+    closeModal();
+    return;
+  }
+  if (view === "sports") {
+    $("#casinoView").hidden = true;
+    $("#sportsView").hidden = false;
+    $("#hero").hidden = true;
+    closeModal();
+    return;
+  }
+  showSection(view);
+}
+function setMainTab(which) {
+  $$("[data-main-tab]").forEach((el) =>
+    el.classList.toggle("selected", el.dataset.mainTab === which),
+  );
+  $$(".side-switch button").forEach((el) =>
+    el.classList.toggle("side-switch-active", el.dataset.mainTab === which),
+  );
+  selectView(which);
+}
+$$("[data-main-tab]").forEach((button) =>
+  button.addEventListener("click", () => setMainTab(button.dataset.mainTab)),
+);
+$$(".nav-item[data-view]").forEach((button) =>
+  button.addEventListener("click", () => selectView(button.dataset.view)),
+);
+$("#languageButton").addEventListener("click", () =>
+  $("#languageMenu").classList.toggle("show"),
+);
+$$("[data-language]").forEach((button) =>
+  button.addEventListener("click", () => {
+    language = button.dataset.language;
+    $("#languageMenu").classList.remove("show");
+    applyLanguage();
+  }),
+);
+$("#searchInput").addEventListener("input", (event) => {
+  query = event.target.value;
+  renderGames();
+});
+$$(".category-chip").forEach((button) =>
+  button.addEventListener("click", () => {
+    $$(".category-chip").forEach((chip) => chip.classList.remove("selected"));
+    button.classList.add("selected");
+    category = button.dataset.category;
+    renderGames();
+  }),
+);
+$("#seeAll").addEventListener("click", () => {
+  $$(".category-chip").forEach((chip) => chip.classList.remove("selected"));
+  $("[data-category=all]").classList.add("selected");
+  category = "all";
+  query = "";
+  $("#searchInput").value = "";
+  renderGames();
+});
+$("#playNow").addEventListener("click", () =>
+  $("#gamesGrid").scrollIntoView({ behavior: "smooth", block: "center" }),
+);
+$("#loginButton").addEventListener("click", showAccount);
+$("#registerButton").addEventListener("click", showAccount);
+$("#resetBalance").addEventListener("click", showCreditsModal);
+$("#modalClose").addEventListener("click", closeModal);
+$("#modalBackdrop").addEventListener("click", (event) => {
+  if (event.target.id === "modalBackdrop") closeModal();
+});
+$("#responsibleDetails").addEventListener("click", () =>
+  showSection("responsible"),
+);
+$("#supportLink").addEventListener(
+  "click",
+  () => ($("#supportPanel").hidden = !$("#supportPanel").hidden),
+);
+$("#supportFab").addEventListener(
+  "click",
+  () => ($("#supportPanel").hidden = !$("#supportPanel").hidden),
+);
+$("#supportClose").addEventListener(
+  "click",
+  () => ($("#supportPanel").hidden = true),
+);
+$$("[data-support]").forEach((button) =>
+  button.addEventListener("click", () => {
+    const key = {
+      credits: "supportCreditsAnswer",
+      games: "supportGamesAnswer",
+      money: "supportMoneyAnswer",
+    }[button.dataset.support];
+    $("#supportAnswer").textContent = t(key);
+  }),
+);
+$("#filtersButton").addEventListener("click", () => {
+  const choices = ["all", "slots", "table", "instant"],
+    next = choices[(choices.indexOf(category) + 1) % choices.length];
+  category = next;
+  $$(`.category-chip`).forEach((chip) => {
+    chip.classList.toggle("selected", chip.dataset.category === category);
+  });
+  renderGames();
+  showToast(
+    t(
+      {
+        all: "allGames",
+        slots: "slots",
+        table: "tableGames",
+        instant: "instantGames",
+      }[category],
+    ),
+  );
+});
+$("#acceptCookies").addEventListener("click", () => {
+  localStorage.setItem("nova-cookie-ok", "1");
+  $("#cookieBanner").hidden = true;
+  showToast(t("cookiesAccepted"));
+});
+if (localStorage.getItem("nova-cookie-ok")) $("#cookieBanner").hidden = true;
+$("#openMenu").addEventListener("click", () => {
+  $("#sidebar").classList.add("open");
+  $("#mobileScrim").classList.add("show");
+});
+$("#closeMenu").addEventListener("click", closeMenu);
+$("#mobileScrim").addEventListener("click", closeMenu);
+function closeMenu() {
+  $("#sidebar").classList.remove("open");
+  $("#mobileScrim").classList.remove("show");
+}
+document.addEventListener("keydown", (event) => {
+  if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+    event.preventDefault();
+    $("#searchInput").focus();
+  }
+  if (event.key === "Escape") closeModal();
+});
+applyLanguage();
+saveBalance();
+renderMatches();
+
+const exportButton = document.createElement("button");
+exportButton.className = "button subtle";
+exportButton.textContent = "Exportar histórico";
+exportButton.onclick = () => {
+  const url = URL.createObjectURL(
+    new Blob(
+      [
+        JSON.stringify(
+          {
+            currency: "virtual_credits",
+            balance,
+            rounds: JSON.parse(localStorage.getItem("nova-history") || "[]"),
+          },
+          null,
+          2,
+        ),
+      ],
+      { type: "application/json" },
+    ),
+  );
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "nova-play.json";
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+};
+document.querySelector(".account-actions").append(exportButton);
+const archiveLink = document.createElement("a");
+archiveLink.href =
+  "https://vercel-home-telemetry-api.vercel.app/laboratory.html?project=casino-simulator-brunnodev";
+archiveLink.textContent = "Armazenar histórico";
+document.querySelector(".site-footer").append(archiveLink);
