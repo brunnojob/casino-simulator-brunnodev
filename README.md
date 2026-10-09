@@ -15,17 +15,10 @@ python -m http.server 8080
 
 Rounds use virtual credits only. Results can be recomputed from recorded draws. Local history exports JSON for the operations archive. The project does not offer payments, withdrawals, or financial prizes.
 
-## Result synchronization
+## Optional report archive
 
-The [operations archive](https://vercel-home-telemetry-api.vercel.app/laboratory.html?project=casino-simulator-brunnodev) stores execution results. Supabase migrations are in the [API repository](https://github.com/brunnojob/vercel-home-telemetry-api/tree/main/supabase/migrations).
+Export a JSON report, then run `python cloud/sync.py enqueue result.json --project casino-simulator-brunnodev` and `python cloud/sync.py sync`. Synchronization requires `BRUNNODEV_ACCESS_TOKEN` and the external operations API; the local outbox retains unacknowledged reports.
 
-```sh
-python cloud/sync.py enqueue result.json --project casino-simulator-brunnodev
-python cloud/sync.py sync
-```
+## License
 
-Set `BRUNNODEV_ACCESS_TOKEN` to your session token. The SQLite outbox retains reports until the server confirms persistence; identical content does not create duplicate records. Tokens are not stored in source code. To run the synchronization tests:
-
-```sh
-python -m unittest discover -s cloud
-```
+Original source and documentation are MIT licensed; see [LICENSE](LICENSE). Third-party dependencies and media retain their respective terms. Maintained by [Brunno Dev](https://brunnodev.store).
