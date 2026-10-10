@@ -1,0 +1,33 @@
+{
+  "repository": "brunnojob/casino-simulator-brunnodev",
+  "inputs": [
+    ".proof/scenarios.json",
+    ".proof/demo.mjs"
+  ],
+  "cases": [
+    {
+      "name": "node --test tests/*.test.mjs",
+      "argv": [
+        "bash",
+        "-e",
+        "-o",
+        "pipefail",
+        "-c",
+        "node --test tests/*.test.mjs"
+      ],
+      "timeout": 900,
+      "display": true
+    },
+    {
+      "name": "Verify game settlement and virtual-credit balance protection",
+      "argv": [
+        "node",
+        ".proof/demo.mjs"
+      ],
+      "contains": [
+        "\"overdraft_rejected\":true"
+      ],
+      "timeout": 120
+    }
+  ]
+}

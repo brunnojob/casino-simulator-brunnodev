@@ -27,4 +27,12 @@ Original source and documentation are MIT licensed; see [LICENSE](LICENSE). Thir
 
 Game and stake validation happens before random draws. Returned rounds contain independent draw arrays, preventing callers from rewriting session history. Run `node --test tests/*.test.mjs`.
 
-Contribution trailer: `Co-authored-by: nyctophile <33561761+ineedfoundmyway@users.noreply.github.com>`.
+Contribution trailer: `Co-authored-by: nyctophile <329826984+ineedfoundmyway@users.noreply.github.com>`.
+
+## Execution proof
+
+[![Executable proof](https://github.com/brunnojob/casino-simulator-brunnodev/actions/workflows/proof.yml/badge.svg)](https://github.com/brunnojob/casino-simulator-brunnodev/actions/workflows/proof.yml)
+
+[Recorded execution and downloadable evidence](https://github.com/brunnojob/casino-simulator-brunnodev/actions/workflows/proof.yml)
+
+Run `python .proof/record.py` after installing the prerequisites above. The scenarios execute repository code and verify exit codes and expected output. CI publishes `execution-proof` with the transcript, input fingerprints and source commit. The downloadable report identifies the exact tested version; the workflow badge tracks the latest run.
