@@ -27,7 +27,7 @@ Original source and documentation are MIT licensed; see [LICENSE](LICENSE). Thir
 
 Game and stake validation happens before random draws. Returned rounds contain independent draw arrays, preventing callers from rewriting session history. Run `node --test tests/*.test.mjs`.
 
-Contribution trailer: `Co-authored-by: nyctophile <329826984+ineedfoundmyway@users.noreply.github.com>`.
+Contribution trailer: `Co-authored-by: nyctophile <33561761+ineedfoundmyway@users.noreply.github.com>`.
 
 ## Execution proof
 
