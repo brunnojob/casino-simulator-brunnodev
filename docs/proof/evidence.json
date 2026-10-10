@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "repository": "brunnojob/casino-simulator-brunnodev",
+  "source_commit": "d6be1f640eddb081b4953f59f9b734d4a2925506",
+  "generated_at": "2026-10-10T02:35:43.608993+00:00",
+  "run_url": "https://github.com/brunnojob/casino-simulator-brunnodev/actions/runs/38017525930",
+  "inputs_sha256": {
+    ".proof/scenarios.json": "16b9df915ed43bb201a40f837fded607ba5390ef9a071e5f688acaf06b620295",
+    ".proof/demo.mjs": "757df6e7b90a0d64d439f1fd214c9a215538a1554bbb861e08fc3692d8a08b97"
+  },
+  "cases": [
+    {
+      "display": true,
+      "name": "node --test tests/*.test.mjs",
+      "argv": [
+        "bash",
+        "-e",
+        "-o",
+        "pipefail",
+        "-c",
+        "node --test tests/*.test.mjs"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "seconds": 0.151,
+      "output": "✔ roulette zero loses and even pockets pay exactly twice the stake (1.13788ms)\n✔ all slot combinations have defined integer payouts (1.399619ms)\n✔ rejection sampling discards biased random values (0.356777ms)\n✔ insufficient balance never creates a round (0.562422ms)\n✔ invalid rounds do not consume randomness or mutate balances (1.395651ms)\n✔ returned rounds cannot rewrite the stored history (1.369693ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 72.279773\n",
+      "output_sha256": "e9e79e5b5fee1ccf1f8172067b60b99723ac798e8c626a554acfc691fe22fbbe"
+    },
+    {
+      "display": true,
+      "name": "Verify game settlement and virtual-credit balance protection",
+      "argv": [
+        "node",
+        ".proof/demo.mjs"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "seconds": 0.051,
+      "output": "{\"virtual_credit_only\":true,\"round\":{\"sequence\":1,\"at\":\"2026-10-10T02:35:43.788Z\",\"game\":\"slots\",\"stake\":10,\"draws\":[0,0,0],\"payout\":200,\"net\":190,\"balance\":210},\"balance\":210,\"overdraft_rejected\":true}\n",
+      "output_sha256": "96115057adf82b758d710958020fb15549347045b7681f8e4120e5dcb12f2402"
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="530" viewBox="0 0 1100 530">
+<rect width="1100" height="530" rx="12" fill="#0d1117"/>
+<title>Recorded program execution</title>
+<g font-family="monospace" font-size="16">
+<text x="24" y="36" fill="#c9d1d9">brunnojob/casino-simulator-brunnodev</text>
+<text x="24" y="58" fill="#c9d1d9">Executed: 2026-10-10T02:35:43.608993+00:00</text>
+<text x="24" y="80" fill="#c9d1d9">Source: d6be1f640edd</text>
+<text x="24" y="102" fill="#c9d1d9"></text>
+<text x="24" y="124" fill="#3fb950">PASS node --test tests/*.test.mjs</text>
+<text x="24" y="146" fill="#79c0ff">$ bash -e -o pipefail -c node --test tests/*.test.mjs</text>
+<text x="24" y="168" fill="#c9d1d9">✔ roulette zero loses and even pockets pay exactly twice the stake (1.13788ms)</text>
+<text x="24" y="190" fill="#c9d1d9">✔ all slot combinations have defined integer payouts (1.399619ms)</text>
+<text x="24" y="212" fill="#c9d1d9">✔ rejection sampling discards biased random values (0.356777ms)</text>
+<text x="24" y="234" fill="#c9d1d9">✔ insufficient balance never creates a round (0.562422ms)</text>
+<text x="24" y="256" fill="#c9d1d9">✔ invalid rounds do not consume randomness or mutate balances (1.395651ms)</text>
+<text x="24" y="278" fill="#c9d1d9">✔ returned rounds cannot rewrite the stored history (1.369693ms)</text>
+<text x="24" y="300" fill="#c9d1d9">ℹ tests 6</text>
+<text x="24" y="322" fill="#c9d1d9">ℹ suites 0</text>
+<text x="24" y="344" fill="#c9d1d9">Full output: evidence.json</text>
+<text x="24" y="366" fill="#c9d1d9"></text>
+<text x="24" y="388" fill="#3fb950">PASS Verify game settlement and virtual-credit balance protection</text>
+<text x="24" y="410" fill="#79c0ff">$ node .proof/demo.mjs</text>
+<text x="24" y="432" fill="#c9d1d9">{&quot;virtual_credit_only&quot;:true,&quot;round&quot;:{&quot;sequence&quot;:1,&quot;at&quot;:&quot;2026-10-</text>
+<text x="24" y="454" fill="#c9d1d9">10T02:35:43.788Z&quot;,&quot;game&quot;:&quot;slots&quot;,&quot;stake&quot;:10,&quot;draws&quot;:[0,0,0],&quot;payout&quot;:200,&quot;net&quot;:190,&quot;balance&quot;:210},&quot;balance</text>
+<text x="24" y="476" fill="#c9d1d9">&quot;:210,&quot;overdraft_rejected&quot;:true}</text>
+</g>
+</svg>
