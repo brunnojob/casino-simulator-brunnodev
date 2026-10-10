@@ -1,10 +1,10 @@
 $ bash -e -o pipefail -c node --test tests/*.test.mjs
-✔ roulette zero loses and even pockets pay exactly twice the stake (1.13788ms)
-✔ all slot combinations have defined integer payouts (1.399619ms)
-✔ rejection sampling discards biased random values (0.356777ms)
-✔ insufficient balance never creates a round (0.562422ms)
-✔ invalid rounds do not consume randomness or mutate balances (1.395651ms)
-✔ returned rounds cannot rewrite the stored history (1.369693ms)
+✔ roulette zero loses and even pockets pay exactly twice the stake (0.919582ms)
+✔ all slot combinations have defined integer payouts (1.396358ms)
+✔ rejection sampling discards biased random values (0.237811ms)
+✔ insufficient balance never creates a round (0.575006ms)
+✔ invalid rounds do not consume randomness or mutate balances (1.777702ms)
+✔ returned rounds cannot rewrite the stored history (1.618855ms)
 ℹ tests 6
 ℹ suites 0
 ℹ pass 6
@@ -12,7 +12,7 @@ $ bash -e -o pipefail -c node --test tests/*.test.mjs
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 72.279773
+ℹ duration_ms 123.942292
 
 $ node .proof/demo.mjs
-{"virtual_credit_only":true,"round":{"sequence":1,"at":"2026-10-10T02:35:43.788Z","game":"slots","stake":10,"draws":[0,0,0],"payout":200,"net":190,"balance":210},"balance":210,"overdraft_rejected":true}
+{"virtual_credit_only":true,"round":{"sequence":1,"at":"2026-10-10T02:43:50.717Z","game":"slots","stake":10,"draws":[0,0,0],"payout":200,"net":190,"balance":210},"balance":210,"overdraft_rejected":true}
