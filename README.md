@@ -1,5 +1,7 @@
 # NOVA Play
 
+[View execution evidence](https://brunnojob.github.io/devstart-lab/proofs/casino-simulator-brunnodev/) · [Run browser demo](https://brunnojob.github.io/devstart-lab/proofs/casino-simulator-brunnodev/demo/)
+
 An entertainment application with separate roulette, dice, and slot rules, random sampling without modulo bias, and exportable history.
 
 ## Run
